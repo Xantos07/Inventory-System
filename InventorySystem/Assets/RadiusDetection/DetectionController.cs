@@ -11,7 +11,7 @@ public class DetectionController : MonoBehaviour
 
     private Collider[] coll;
 
-    private Dictionary<float, GameObject> testDis = new Dictionary<float, GameObject>();
+    private Dictionary<GameObject, float> elementDetected = new Dictionary<GameObject, float>();
     private void Update()
     {
         DetectionElements();
@@ -19,7 +19,6 @@ public class DetectionController : MonoBehaviour
 
     public void DetectionElements()
     {
-        testDis.Clear();
         for (int i = 0; i < parametreDetections.Count; i++)
         {
             coll = Physics.OverlapSphere(transform.position, parametreDetections[i].radius);  
@@ -37,26 +36,36 @@ public class DetectionController : MonoBehaviour
                         Debug.DrawLine(transform.position,coll[j].transform.position, parametreDetections[i].colorLineDetection);  
                         
                         float dist = Vector3.Distance (transform.position, coll[j].transform.position);
-                        testDis.Add (dist, coll[j].gameObject);
-                    }
-                }
-                
-                if (testDis.Count != 0)
-                {
-                    var myList = testDis.ToList();
 
-                    myList.Sort((pair1, pair2) => pair1.Key.CompareTo(pair2.Key));
-                    
-                    foreach (var value in myList)
-                    {
-                        Debug.Log(value + " object : " + myList[myList.Count - 1].Value.name);
+                        //A revoir pour refractor
+                        if (!elementDetected.ContainsKey(coll[j].gameObject))
+                        {
+                            elementDetected.Add (coll[j].gameObject,dist);   
+                        }
+
+                        if (elementDetected.ContainsKey(coll[j].gameObject))
+                        {
+                            elementDetected[coll[j].gameObject] = dist;
+                        }
                     }
                 }
 
             }
         }
+
+        NearestElement();
     }
 
+    public void NearestElement()
+    {
+        if (elementDetected.Count != 0)
+        {
+            var myList = elementDetected.ToList();
+            myList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
+            Debug.Log( "pair1.Key : " + myList[0].Key + " object : " + myList[0].Value);
+        }
+    }
+    
     public bool InRangeZone(float _angleInDegree, Vector3 _directionObject)
     {
         if (Vector3.Angle (transform.forward, _directionObject) < _angleInDegree / 2)
