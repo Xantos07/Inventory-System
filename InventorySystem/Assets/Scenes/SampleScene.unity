@@ -2985,10 +2985,8 @@ MonoBehaviour:
   parametreDetections:
   - {fileID: 11400000, guid: fd5afa09569125a43896ce3f59fa3ca7, type: 2}
   - {fileID: 11400000, guid: 04ab4cdfe2754c444a645269e1ee6078, type: 2}
-  coll: []
-  elementDetectedTEST: []
-  elementDetectedfloatTEST: []
   e: {fileID: 1833427175}
+  objectInteratable: {fileID: 0}
 --- !u!4 &704019360
 Transform:
   m_ObjectHideFlags: 0
@@ -6503,10 +6501,8 @@ MonoBehaviour:
   parametreDetections:
   - {fileID: 11400000, guid: fd5afa09569125a43896ce3f59fa3ca7, type: 2}
   - {fileID: 11400000, guid: 04ab4cdfe2754c444a645269e1ee6078, type: 2}
-  coll: []
-  elementDetectedTEST: []
-  elementDetectedfloatTEST: []
   e: {fileID: 1833427175}
+  objectInteratable: {fileID: 0}
 --- !u!4 &1769789459
 Transform:
   m_ObjectHideFlags: 0

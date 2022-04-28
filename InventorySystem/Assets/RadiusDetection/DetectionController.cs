@@ -9,39 +9,20 @@ public class DetectionController : MonoBehaviour
 {
     [SerializeField]
     private List<ParametreDetection> parametreDetections;
-    [SerializeField]
     private Collider[] coll;
-
     private Dictionary<GameObject, float> elementDetected = new Dictionary<GameObject, float>();
     
-    /*Zone de test*/
-    public List<GameObject> elementDetectedTEST = new List<GameObject>();
-    public List<float> elementDetectedfloatTEST = new List<float>();
     [SerializeField] private GameObject e;
+    [SerializeField] private Interactable objectInteratable;
+    private float dist;
     private void Update()
     {
         DetectionElements();
 
-        /*Zone de test*/
-        elementDetectedTEST.Clear();
-        elementDetectedfloatTEST.Clear();
-        foreach (var VARIABLE in elementDetected.Keys)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            elementDetectedTEST.Add(VARIABLE);
-        }   
-        
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            foreach (var VARIABLE in elementDetected.Keys)
-            {
-                Debug.LogWarning(VARIABLE);
-            }
-            
-        }
-
-        foreach (var VARIABLE in elementDetected.Values)
-        {
-            elementDetectedfloatTEST.Add(VARIABLE);
+            if(objectInteratable != null)
+               Destroy(objectInteratable.gameObject);
         }
     }
 
@@ -57,51 +38,41 @@ public class DetectionController : MonoBehaviour
                 IInteractable interactable = coll[j].GetComponent<IInteractable>();
                  
                 Vector3 collDist =  coll[j].transform.position - transform.position;
+                dist = Vector3.Distance (transform.position, coll[j].transform.position);
+                
+                if(InRangeZone(parametreDetections[i].angleView, collDist))
+                {
+                    if (identity != null && identity.GetDetectionElement() == parametreDetections[i].detectionElement)
+                    {
+                        Debug.DrawLine(transform.position,coll[j].transform.position, parametreDetections[i].colorLineDetection);
 
-                if(!InRangeZone(parametreDetections[i].angleView, collDist))
+                        //A revoir pour refractor
+                        if (!elementDetected.ContainsKey(coll[j].gameObject))
+                        {
+                            elementDetected.Add (coll[j].gameObject,dist);   
+                        }
+                        else
+                        {
+                            elementDetected[coll[j].gameObject] = dist;
+                        }
+                    }
+                }
+
+                
+                if (!InRangeZone(parametreDetections[i].angleView, collDist) || dist >= parametreDetections[i].radius)
                 {
-                    //Debug.Log($"tu es hors de ma ligne de mire");
-                    continue;
+                    if (elementDetected.ContainsKey(coll[j].gameObject))
+                    {
+                        elementDetected.Remove(coll[j].gameObject);   
+                    }
                 }
                 
-                if (identity == null || identity.GetDetectionElement() != parametreDetections[i].detectionElement)
-                {
-                    Debug.Log($"parametreDetections[i].detectionElement {identity.name}");
-                    continue;
-                }
-                Debug.Log($"tu es {identity.name}");
-                Debug.DrawLine(transform.position,coll[j].transform.position, parametreDetections[i].colorLineDetection);  
-                    
-                float dist = Vector3.Distance (transform.position, coll[j].transform.position);
-                
-                
-                //A revoir pour refractor
-                if (!elementDetected.ContainsKey(coll[j].gameObject))
-                {         
-                    Debug.LogWarning($"Pourquoi tu le rajoutes ? !");
-                    elementDetected.Add (coll[j].gameObject,dist);   
-                }
-                else
-                {
-                    elementDetected[coll[j].gameObject] = dist;
-                }
-                
+
                 NearestElement(parametreDetections[i].radius);
             }
         }
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        foreach (var j in coll)
-        {
-#if UNITY_EDITOR
-            Handles.Label(j.transform.position,
-                "" + Vector3.Distance(transform.position, j.transform.position).ToString());
-#endif   
-        }
-    }
-
+    
     public void NearestElement(float _dist)
     {
         if (elementDetected.Count != 0)
@@ -109,12 +80,19 @@ public class DetectionController : MonoBehaviour
             var myList = elementDetected.ToList();
             myList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
             e.transform.position = myList[0].Key.gameObject.transform.position;
-           Debug.Log( "pair1.Key : " + myList[0].Key + " object : " + myList[0].Value);
+            Debug.Log( "pair1.Key : " + myList[0].Key + " object : " + myList[0].Value);
 
-           if (myList[0].Value >= _dist)
-           {
-               elementDetected.Remove(myList[0].Key );
-           }
+            objectInteratable = myList[0].Key.GetComponent<Interactable>();
+            
+            if (myList[0].Value >= _dist)
+            {
+                elementDetected.Remove(myList[0].Key );
+            }
+        }
+        else
+        {
+            objectInteratable = null;
+            e.transform.position = new Vector3(0, 0, 0);
         }
     }
     
@@ -137,5 +115,19 @@ public class DetectionController : MonoBehaviour
     {
         return parametreDetections;
     }
-
+    
+    private void OnDrawGizmosSelected()
+    {
+        if (coll.Length == 0)
+        {
+            return;
+        }
+        foreach (var j in coll)
+        {
+#if UNITY_EDITOR
+            Handles.Label(j.transform.position,
+                "" + Vector3.Distance(transform.position, j.transform.position).ToString());
+#endif   
+        }
+    }
 }
