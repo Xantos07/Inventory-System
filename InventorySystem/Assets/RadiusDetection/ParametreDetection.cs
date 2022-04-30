@@ -19,5 +19,7 @@ public enum DetectionElement
 {
     enemy = 0,
     player = 1,
-    item = 2
+    item = 2,
+    energy = 3,
+    mammouth = 4,
 }

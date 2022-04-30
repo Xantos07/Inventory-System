@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d748076d135c2479ea5bf1a0bd2843, type: 3}
   m_Name: ItemDetection
   m_EditorClassIdentifier: 
-  radius: 3.4
+  radius: 3.5
   angleView: 40
   detectionElement: 2
   colorCircleDetection: {r: 0.7075472, g: 0.60602826, b: 0.2236116, a: 1}
