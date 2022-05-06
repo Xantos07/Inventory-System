@@ -8,6 +8,7 @@ public class Interaction : MonoBehaviour
     [SerializeField] private List<DetectionElement> _interactionElement;
     [SerializeField] private GameObject panelE;
     [SerializeField] private Interactable objectInteratable;
+    [SerializeField] private Inventory iventory;
     
     private void Update()
     {
@@ -15,7 +16,9 @@ public class Interaction : MonoBehaviour
         {
             if (objectInteratable != null)
             {
-                Debug.Log($"Object pris et mis dans 'l'invantaire ! ");
+                Item item = objectInteratable.GetComponent<Item>();
+
+                iventory.RangeItem(item.itemScriptable);
             }
         }
     }

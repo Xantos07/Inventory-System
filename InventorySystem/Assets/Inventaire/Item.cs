@@ -6,3 +6,4 @@ public class Item : MonoBehaviour
 {
     public ItemScriptable itemScriptable;
 }
+
