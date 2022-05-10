@@ -8,7 +8,7 @@ public class Interaction : MonoBehaviour
     [SerializeField] private List<DetectionElement> _interactionElement;
     [SerializeField] private GameObject panelE;
     [SerializeField] private Interactable objectInteratable;
-    [SerializeField] private Inventory iventory;
+    [SerializeField] private Inventory inventory;
     
     private void Update()
     {
@@ -18,7 +18,7 @@ public class Interaction : MonoBehaviour
             {
                 Item item = objectInteratable.GetComponent<Item>();
 
-                iventory.RangeItem(item.itemScriptable);
+                inventory.RangeItem(item.itemScriptable);
             }
         }
     }

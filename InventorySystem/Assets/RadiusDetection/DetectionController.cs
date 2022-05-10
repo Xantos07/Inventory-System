@@ -16,6 +16,11 @@ public class DetectionController : MonoBehaviour
     private Interaction interaction;
 
     private float dist;
+
+    void Start()
+    {
+        interaction = GetComponent<Interaction>();
+    }
     private void Update()
     {
         DetectionElements();

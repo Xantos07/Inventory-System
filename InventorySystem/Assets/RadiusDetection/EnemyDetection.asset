@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d748076d135c2479ea5bf1a0bd2843, type: 3}
   m_Name: EnemyDetection
   m_EditorClassIdentifier: 
-  radius: 9.8
-  angleView: 140
+  radius: 10
+  angleView: 90
   detectionElement: 0
-  colorCircleDetection: {r: 0.34901962, g: 0.5568628, b: 0.22745098, a: 1}
-  colorLineDetection: {r: 0.6429519, g: 0.7176471, b: 0.3058824, a: 1}
+  colorCircleDetection: {r: 0.44431436, g: 0.7169812, b: 0.26041296, a: 1}
+  colorLineDetection: {r: 0.6823565, g: 0.8018868, b: 0.28368637, a: 1}
