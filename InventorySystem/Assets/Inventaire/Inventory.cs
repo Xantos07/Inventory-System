@@ -11,10 +11,12 @@ public class Inventory : MonoBehaviour
     {
         foreach (var myInventoryItem in inventoryItems)
         {
-            if (myInventoryItem._itemScriptable !=  null && myInventoryItem._itemScriptable.name == _itemScriptable.name)
+            Debug.Log($"JE récupere un item dans mon inventaire ");
+            if (myInventoryItem._itemScriptable != null && myInventoryItem._itemScriptable.name == _itemScriptable.name)
             {
                 Debug.Log("ajout d'un item deja existant !");
                 myInventoryItem.AddItem(_itemScriptable.icon);
+
                  break;
             }
 

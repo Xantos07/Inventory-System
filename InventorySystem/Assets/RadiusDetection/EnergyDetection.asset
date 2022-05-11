@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnergyDetection
   m_EditorClassIdentifier: 
   radius: 5
-  angleView: 90
+  angleView: 108
   detectionElement: 3
   colorCircleDetection: {r: 0.7387427, g: 0.6039216, b: 0.754717, a: 1}
   colorLineDetection: {r: 0.49163535, g: 0.253649, b: 0.7169812, a: 1}

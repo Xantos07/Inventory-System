@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Wood
   description: The wood is basic ressouce for craft
-  icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: eba1c7d42f07db64eb88028972a8d00f, type: 3}

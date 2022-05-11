@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: IronOre
   description: 'Good material for craft strong tools '
-  icon: {fileID: 21300000, guid: 4010e865aa4d15149aa8e9676f401c88, type: 3}
+  icon: {fileID: 21300000, guid: 742760070c4c1dd408e10a4b7b679105, type: 3}
