@@ -40,16 +40,15 @@ public class DetectionController : MonoBehaviour
                 Vector3 collDist =  coll[j].transform.position - transform.position;
                 dist = Vector3.Distance (transform.position, coll[j].transform.position);
 
-
+                if (interactable == null || identity == null )
+                {
+                    continue;
+                }
+                
                 if (!interaction.GetInteractionElement().Contains(identity.GetDetectionElement())) 
                 {
                         Debug.Log("Mauvais item : " + identity.gameObject.name);
                         continue;
-                }
-                
-                if (interactable == null || identity == null )
-                {
-                    continue;
                 }
 
                 if (!InRangeZone(parametreDetections[i].angleView, collDist))

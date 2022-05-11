@@ -6,7 +6,12 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private List<InventoryItem> inventoryItems = new List<InventoryItem>();
-    
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void RangeItem(ItemScriptable _itemScriptable)
     {
         foreach (var myInventoryItem in inventoryItems)

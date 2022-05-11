@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Wood Plank
   description: 'Perfect for avanced build and craft  '
-  icon: {fileID: 21300000, guid: f6bc534c8e57ddf40bccf93ac70ca7cc, type: 3}
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
