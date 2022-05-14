@@ -12,6 +12,6 @@ public abstract class CraftScriptable : ScriptableObject
 [Serializable]
 public class ressourceCraft
 {
-    public ItemScriptable item;
+    public Item item;
     public int numberItem;
 }

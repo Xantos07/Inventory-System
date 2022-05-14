@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour, IInteractable
 {
-    public void pickup()
-    {
-        
-    }
+
 }
 
 public interface IInteractable
 {
-    void pickup();
+
 }

@@ -18,7 +18,7 @@ public class Interaction : MonoBehaviour
             {
                 Item item = objectInteratable.GetComponent<Item>();
 
-                inventory.RangeItem(item.itemScriptable);
+                inventory.RangeItem(item);
             }
         }
     }

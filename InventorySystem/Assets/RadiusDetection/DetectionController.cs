@@ -36,7 +36,7 @@ public class DetectionController : MonoBehaviour
             {
                 Identity identity = coll[j].GetComponent<Identity>();
                 IInteractable interactable = coll[j].GetComponent<IInteractable>();
-                 
+
                 Vector3 collDist =  coll[j].transform.position - transform.position;
                 dist = Vector3.Distance (transform.position, coll[j].transform.position);
 
@@ -44,7 +44,7 @@ public class DetectionController : MonoBehaviour
                 {
                     continue;
                 }
-                
+
                 if (!interaction.GetInteractionElement().Contains(identity.GetDetectionElement())) 
                 {
                         Debug.Log("Mauvais item : " + identity.gameObject.name);
@@ -87,6 +87,7 @@ public class DetectionController : MonoBehaviour
         {
             var myList = elementDetected.ToList();
             myList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
+            
             interaction.GetPanelE().transform.position = myList[0].Key.gameObject.transform.position;
             //Debug.Log( "pair1.Key : " + myList[0].Key + " object : " + myList[0].Value);
 
