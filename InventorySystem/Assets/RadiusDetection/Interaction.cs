@@ -9,7 +9,13 @@ public class Interaction : MonoBehaviour
     [SerializeField] private GameObject panelE;
     [SerializeField] private Interactable objectInteratable;
     [SerializeField] private Inventory inventory;
-    
+    [SerializeField] private DetectionController detectionController;
+
+    private void Start()
+    {
+        detectionController = GetComponent<DetectionController>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -19,6 +25,8 @@ public class Interaction : MonoBehaviour
                 Item item = objectInteratable.GetComponent<Item>();
 
                 inventory.RangeItem(item);
+                detectionController.RemoveObjectInterractable(objectInteratable.gameObject);
+                Destroy(objectInteratable.gameObject);
             }
         }
     }

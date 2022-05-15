@@ -61,21 +61,20 @@ public class DetectionController : MonoBehaviour
                     continue;
                 }
                 
-                //if(InRangeZone(parametreDetections[i].angleView, collDist))
-                //{
-                    if (identity.GetDetectionElement() == parametreDetections[i].detectionElement)
-                    {
-                        Debug.DrawLine(transform.position,coll[j].transform.position, parametreDetections[i].colorLineDetection);
-                        
-                        if (!elementDetected.ContainsKey(coll[j].gameObject))
-                        {
-                            elementDetected.Add (coll[j].gameObject,dist);   
-                            continue;
-                        }
 
-                        elementDetected[coll[j].gameObject] = dist;
+                if (identity.GetDetectionElement() == parametreDetections[i].detectionElement)
+                {
+                    Debug.DrawLine(transform.position,coll[j].transform.position, parametreDetections[i].colorLineDetection);
+                    
+                    if (!elementDetected.ContainsKey(coll[j].gameObject))
+                    {
+                        elementDetected.Add (coll[j].gameObject,dist);   
+                        continue;
                     }
-                //}
+
+                    elementDetected[coll[j].gameObject] = dist;
+                }
+
             }
             NearestElement(parametreDetections[i].radius);
         }
@@ -84,9 +83,12 @@ public class DetectionController : MonoBehaviour
     public void NearestElement(float _dist)
     {
         if (elementDetected.Count != 0)
-        {
+        {            
             var myList = elementDetected.ToList();
             myList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
+            
+            if (myList[0].Key == null)
+                return;
             
             interaction.GetPanelE().transform.position = myList[0].Key.gameObject.transform.position;
             //Debug.Log( "pair1.Key : " + myList[0].Key + " object : " + myList[0].Value);
@@ -105,6 +107,11 @@ public class DetectionController : MonoBehaviour
         interaction.GetPanelE().transform.position = new Vector3(0, 0, 0);
         
     }
+
+    public void RemoveObjectInterractable(GameObject _obj)
+    { 
+        elementDetected.Remove(_obj);
+    }
     
     public bool InRangeZone(float _angleInDegree, Vector3 _directionObject)
     {
@@ -118,7 +125,7 @@ public class DetectionController : MonoBehaviour
 
     public Vector3 DirAngle(float _angleInDegree)
     {
-        return new Vector3(Mathf.Sin(_angleInDegree * Mathf.Deg2Rad), 0, Mathf.Cos(_angleInDegree  * Mathf.Deg2Rad));
+        return new Vector3(Mathf.Sin((_angleInDegree+transform.eulerAngles.y) * Mathf.Deg2Rad), 0, Mathf.Cos((_angleInDegree+transform.eulerAngles.y)  * Mathf.Deg2Rad));
     }
     
     public List<ParametreDetection> GetParametreDetections()

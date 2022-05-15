@@ -17,10 +17,11 @@ public class DetectionEditor : Editor
 
             Vector3 angleA = detectionController.DirAngle(_parametreDetection.angleView/ 2);
             Vector3 angleB = detectionController.DirAngle(-_parametreDetection.angleView/ 2);
-            
+
+
             Handles.DrawLine(detectionController.transform.position,detectionController.transform.position + angleA * _parametreDetection.radius);
             Handles.DrawLine(detectionController.transform.position,detectionController.transform.position + angleB * _parametreDetection.radius);
-            
+
             GUIStyle style = new GUIStyle();
             style.normal.textColor = _parametreDetection.colorCircleDetection;
             Vector3 positionDC = new Vector3(detectionController.transform.position.x,detectionController.transform.position.y,detectionController.transform.position.z+_parametreDetection.radius);
