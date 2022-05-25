@@ -4,36 +4,35 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryItem : MonoBehaviour
+public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler
 {
     [SerializeField] private int amountItem;
     [SerializeField] private Image itemImg;
     [SerializeField] private TextMeshProUGUI itemNumberTxt;
     [SerializeField] private Item item;
-    [SerializeField] private Inventory inventory;
+    //
+    [SerializeField] private RectTransform choicePanel;
+    [SerializeField] private ChoiceActionItem choiceActionItem;
+    [SerializeField] private RectTransform descriptionPanel;
+    private TextMeshProUGUI descriptionText;
+    //
     
     private void Start()
     {
         Transform child = transform.GetChild(0);
         itemImg = child.GetComponent<Image>();
-        inventory = GetComponentInParent<Inventory>();
         itemImg.color = new Color(0,0,0,0);
         itemNumberTxt = GetComponentInChildren<TextMeshProUGUI>();
+        descriptionText = descriptionPanel.GetComponentInChildren<TextMeshProUGUI>();
     }
     
     public void AddItem(Sprite sprite, int _amount)
     {
         amountItem += _amount;
 
-        /*
-        if (amountItem > item.amountStockableMax)
-        {
-            int reste = amountItem - item.amountStockableMax;
-            Debug.Log($"reste : {reste}");
-        }
-        */
         itemImg.sprite = sprite;
         itemImg.color = new Color(255,255,255,255);
         itemNumberTxt.text = amountItem.ToString();
@@ -42,9 +41,7 @@ public class InventoryItem : MonoBehaviour
     public void RemoveItem()
     {
         amountItem--;
-        
-        CheckType();
-        
+
         itemNumberTxt.text = amountItem.ToString();
         
         if (amountItem <= 0)
@@ -55,6 +52,42 @@ public class InventoryItem : MonoBehaviour
             itemImg.sprite = null;
             item = null;
         }
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (item != null)
+        {
+            choiceActionItem.SetItem(item);
+            choiceActionItem.UpdateViewButton();
+            
+            choicePanel.gameObject.SetActive(true);
+            descriptionPanel.gameObject.SetActive(false);
+            
+            // non par rapport a la dimention de l'écran
+            choicePanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;;
+            return;
+        }
+        
+        choicePanel.gameObject.SetActive(false);
+    }
+    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        descriptionPanel.gameObject.SetActive(false);
+        choicePanel.gameObject.SetActive(false);
+        
+        if (item != null)
+        {
+            descriptionPanel.gameObject.SetActive(true);
+            descriptionText.text = item.description;
+            
+            // non par rapport a la dimention de l'écran
+            descriptionPanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            return;
+        }
+        
+        descriptionPanel.gameObject.SetActive(false);
     }
 
     public Item GetItem()
@@ -69,28 +102,11 @@ public class InventoryItem : MonoBehaviour
     public void SetItem(Item _newItem)
     {
         item = _newItem;
-    }
 
-    void CheckType()
-    {
-        switch (item)
-        {
-            case Weapon weapon:
-                weapon.Equip();
-                Debug.Log($"Vous avez pris une arme !"); 
-                break;
-            case Ressource resource:
-                Debug.Log($"Vous avez pris une ressource !"); 
-                break;
-            case Equipement equipement:
-                Debug.Log($"Vous avez pris une equipement !"); 
-                break;
-            case Potion potion:
-                Debug.Log($"Vous avez pris une potion !"); 
-                break;
-            default:
-                Debug.Log($"Vous n'avez rien pris ..."); 
-                break;
-        }
+        gameObject.AddComponent(_newItem.GetType());
+        item = GetComponent<Item>();
+        
+        item.name =_newItem.name;
+        item.description =_newItem.description;
     }
 }

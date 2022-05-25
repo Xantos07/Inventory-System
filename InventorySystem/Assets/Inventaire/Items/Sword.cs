@@ -6,6 +6,8 @@ public class Sword : Weapon
 {
     public override void Equip()
     {
-        Debug.Log($"Tu as équipé {gameObject.name}");
+        Debug.Log($"Tu as équipé une épee");
     }
+
+
 }
