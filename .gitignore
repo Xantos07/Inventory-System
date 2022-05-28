@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+InventorySystem/Library/ArtifactDB
+InventorySystem/Library/SourceAssetDB
+*.db
+InventorySystem/Library/ArtifactDB
