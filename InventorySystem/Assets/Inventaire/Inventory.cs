@@ -13,9 +13,9 @@ public class Inventory : MonoBehaviour
         foreach (var myInventoryItem in inventoryItems)
         {
             Debug.Log($"JE récupere un item dans mon inventaire ");
-            
+
             if (myInventoryItem.GetItem() != null &&
-                extraItem <= 0 &&
+                myInventoryItem.GetAmountItem() != _item.amountStockableMax &&
                 myInventoryItem.GetItem().name == _item.name)
             {
                 Debug.Log("ajout d'un item deja existant !");
@@ -35,16 +35,48 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    public void VerificationAmountItem(InventoryItem _inventoryItem, Item _item)
+    {
+        //75 - (100 - 75) = 50
+        extraItem = _item.amount - (_item.amountStockableMax - _inventoryItem.GetAmountItem());
+        Debug.Log("extraItem : " + extraItem);
+        
+        if(extraItem <= 0)
+        {
+            _inventoryItem.AddItem(_item.icon,_item.amount);
+            extraItem = 0;
+        }
+
+        if (extraItem > 0)
+        {
+            //75 - 50 = 25
+            _inventoryItem.AddItem(_item.icon,_item.amount - extraItem);
+            _item.amount = extraItem;
+        }
+        
+        if (extraItem > 0)
+        {
+            RangeItem(_item);
+            _item.amount = extraItem;
+        }
+    }
     
+    /*
     
     public void VerificationAmountItem(InventoryItem _inventoryItem, Item _item)
     {
         extraItem = _item.amount - (_item.amountStockableMax - _inventoryItem.GetAmountItem());
-        
+
         if(extraItem <= 0)
         {
             extraItem = 0;
             _inventoryItem.AddItem(_item.icon,_item.amount);
+        }
+
+        if (_inventoryItem.GetAmountItem() != _item.amountStockableMax)
+        {
+            Debug.LogWarning($"Tu passes avec {extraItem }");
         }
 
         if (extraItem > 0)
@@ -82,4 +114,5 @@ public class Inventory : MonoBehaviour
         }
         
     }
+    */
 }

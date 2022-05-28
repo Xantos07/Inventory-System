@@ -7,7 +7,7 @@ public class Stone : Ressource
 {
     public virtual void Drop()
     {
-        Debug.Log("Je suis entrain d'équiper mon item");   
+        Debug.Log("Je suis entrain de Drop mon item");   
     }
 
 }

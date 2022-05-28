@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New parametre", menuName = "Dectection Parametre")]
+[CreateAssetMenu(fileName = "New parametre", menuName = "Dectection Parameter")]
 public class ParametreDetection : ScriptableObject
 {
     [Range(1f,100f)]
@@ -21,5 +21,5 @@ public enum DetectionElement
     player = 1,
     item = 2,
     energy = 3,
-    mammouth = 4,
+    Element00 = 4,
 }

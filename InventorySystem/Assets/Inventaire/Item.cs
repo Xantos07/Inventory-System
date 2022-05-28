@@ -28,7 +28,7 @@ public abstract class Potion : Item
 {
     public virtual void Use()
     {
-        Debug.Log("Je suis entrain d'équiper mon item");   
+        Debug.Log("Je bois une potion");   
     }
     
 }
@@ -52,7 +52,7 @@ public abstract class Equipement : Item
 {
     public virtual void Equip()
     {
-        Debug.Log("Je suis entrain d'équiper mon item");   
+        Debug.Log("Je suis entrain de m'équiper");   
     }
     
 }
