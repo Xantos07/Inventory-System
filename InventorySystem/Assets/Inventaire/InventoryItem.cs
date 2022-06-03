@@ -58,14 +58,16 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
     {
         if (item != null)
         {
+            choicePanel.gameObject.SetActive(true);
+            
             choiceActionItem.SetItem(item);
             choiceActionItem.UpdateViewButton();
             
-            choicePanel.gameObject.SetActive(true);
             descriptionPanel.gameObject.SetActive(false);
             
             // non par rapport a la dimention de l'écran
-            choicePanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;;
+            choicePanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            Debug.Log($"choicePanel.anchoredPosition : {choicePanel.anchoredPosition}");
             return;
         }
         
@@ -84,6 +86,7 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
             
             // non par rapport a la dimention de l'écran
             descriptionPanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            Debug.Log($"descriptionPanel.anchoredPosition : {descriptionPanel.anchoredPosition}");
             return;
         }
         

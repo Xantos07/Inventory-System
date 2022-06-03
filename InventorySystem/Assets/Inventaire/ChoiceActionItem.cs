@@ -15,8 +15,8 @@ public class ChoiceActionItem : MonoBehaviour
 
     public void ScalePanel()
     {
+        baseHeight++;
         buttonsPanelUI.sizeDelta = new Vector2(buttonsPanelUI.sizeDelta.x, baseHeight * HeightBtwButton);
-        
         baseHeight = 0;
     }
     
@@ -47,8 +47,7 @@ public class ChoiceActionItem : MonoBehaviour
                 baseHeight++;
                 break;
             case Ressource resource:
-                Debug.Log($"resource !"); 
-                baseHeight++;
+                Debug.Log($"resource !");
                 break;
             case Equipement equipement:
                 equipement.Equip();

@@ -6,7 +6,7 @@ public class PotionHeal : Potion
 {
     public override void Use()
     {
-        Debug.Log("Je suis entrain d'équiper mon item");   
+        Debug.Log("Je bois une potion soin");   
     }
 
 
