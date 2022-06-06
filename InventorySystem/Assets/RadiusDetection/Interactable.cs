@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour, IInteractable
+public class Interactable : MonoBehaviour
 {
 
 }
 
-public interface IInteractable
-{
 
-}

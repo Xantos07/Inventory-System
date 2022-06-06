@@ -35,7 +35,7 @@ public class DetectionController : MonoBehaviour
             for (int j = 0; j < coll.Length; j++)
             {
                 Identity identity = coll[j].GetComponent<Identity>();
-                IInteractable interactable = coll[j].GetComponent<IInteractable>();
+                Interactable interactable = coll[j].GetComponent<Interactable>();
 
                 Vector3 collDist =  coll[j].transform.position - transform.position;
                 dist = Vector3.Distance (transform.position, coll[j].transform.position);
