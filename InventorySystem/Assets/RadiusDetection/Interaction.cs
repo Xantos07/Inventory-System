@@ -10,10 +10,12 @@ public class Interaction : MonoBehaviour
     [SerializeField] private Interactable objectInteratable;
     [SerializeField] private Inventory inventory;
     [SerializeField] private DetectionController detectionController;
+    [SerializeField] private PlayerController playerController;
 
     private void Start()
     {
         detectionController = GetComponent<DetectionController>();
+        playerController = GetComponent<PlayerController>();
     }
 
     private void Update()
@@ -23,7 +25,9 @@ public class Interaction : MonoBehaviour
             if (objectInteratable != null)
             {
                 Item item = objectInteratable.GetComponent<Item>();
-
+                
+                playerController.TakeObject();
+                
                 inventory.RangeItem(item);
                 detectionController.RemoveObjectInterractable(objectInteratable.gameObject);
                 Destroy(objectInteratable.gameObject);

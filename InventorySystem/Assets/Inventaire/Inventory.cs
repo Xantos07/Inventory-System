@@ -8,6 +8,17 @@ public class Inventory : MonoBehaviour
     [SerializeField] private List<InventoryItem> inventoryItems = new List<InventoryItem>();
     private int extraItem = 0;
 
+    private void Start()
+    {
+        SetInventoryItems();
+    }
+
+    public void SetInventoryItems()
+    {
+        inventoryItems.Clear();
+        inventoryItems = new List<InventoryItem>(GetComponentsInChildren<InventoryItem>());
+    }
+
     public void RangeItem(Item _item)
     {
         foreach (var myInventoryItem in inventoryItems)

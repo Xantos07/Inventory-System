@@ -12,14 +12,15 @@ public class PlayerController : MonoBehaviour
     private float speed = 5f;
     [SerializeField]
     private float distanceToRay = 100f;
-    [SerializeField]
-    private AnimationCurve inertie;
+    [SerializeField] private Animator anim;
     
     float distanceMax;
     bool endingMovement = true;
+    private Vector3 dir;
     private void Start()
     {
         endingMovement = true;
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
                 positionMouse = hit.point;
                 
                 distanceMax = Vector3.Distance(positionMouse, transform.position);
+                 dir =  positionMouse - transform.position;
             }
             
             endingMovement = false;
@@ -46,16 +48,23 @@ public class PlayerController : MonoBehaviour
 
     public void Move()
     {
-        Vector3 dir =  positionMouse - transform.position;
         float dist = Vector3.Distance(positionMouse, transform.position);
-        float factor = 1 - dist / distanceMax;
 
-        transform.position += new Vector3(dir.x,0,dir.z) * speed * Time.deltaTime * inertie.Evaluate(factor);
+        transform.position += new Vector3(dir.x,0,dir.z) * speed * Time.deltaTime;
         transform.rotation = Quaternion.LookRotation(new Vector3(dir.x,0,dir.z),transform.up);
         
-        if (dist <= 0.6f)
+        anim.SetBool("Walk", true);
+        
+        if (dist <= .9f)
         {
+            dist = 0;
+            anim.SetBool("Walk", false);
             endingMovement = true;
         }
+    }
+
+    public void TakeObject()
+    {
+        anim.SetTrigger("PickUp");
     }
 }

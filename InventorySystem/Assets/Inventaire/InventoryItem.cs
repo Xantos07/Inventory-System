@@ -18,8 +18,6 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
     [SerializeField] private ChoiceActionItem choiceActionItem;
     [SerializeField] private RectTransform descriptionPanel;
     private TextMeshProUGUI descriptionText;
-    //
-    
     private void Start()
     {
         Transform child = transform.GetChild(0);
@@ -38,9 +36,9 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         itemNumberTxt.text = amountItem.ToString();
     }
     
-    public void RemoveItem()
+    public void RemoveItem( int _amount)
     {
-        amountItem--;
+        amountItem -= _amount;
 
         itemNumberTxt.text = amountItem.ToString();
         
@@ -52,45 +50,6 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
             itemImg.sprite = null;
             item = null;
         }
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if (item != null)
-        {
-            choicePanel.gameObject.SetActive(true);
-            
-            choiceActionItem.SetItem(item);
-            choiceActionItem.UpdateViewButton();
-            
-            descriptionPanel.gameObject.SetActive(false);
-            
-            // non par rapport a la dimention de l'écran
-            choicePanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            Debug.Log($"choicePanel.anchoredPosition : {choicePanel.anchoredPosition}");
-            return;
-        }
-        
-        choicePanel.gameObject.SetActive(false);
-    }
-    
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        descriptionPanel.gameObject.SetActive(false);
-        choicePanel.gameObject.SetActive(false);
-        
-        if (item != null)
-        {
-            descriptionPanel.gameObject.SetActive(true);
-            descriptionText.text = item.description;
-            
-            // non par rapport a la dimention de l'écran
-            descriptionPanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            Debug.Log($"descriptionPanel.anchoredPosition : {descriptionPanel.anchoredPosition}");
-            return;
-        }
-        
-        descriptionPanel.gameObject.SetActive(false);
     }
 
     public Item GetItem()
@@ -111,5 +70,44 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         
         item.name =_newItem.name;
         item.description =_newItem.description;
+    }
+    
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (item != null)
+        {
+            choicePanel.gameObject.SetActive(true);
+            
+            choiceActionItem.SetItem(item);
+            choiceActionItem.UpdateViewButton();
+            
+            descriptionPanel.gameObject.SetActive(false);
+            
+            // non par rapport a la dimention de l'écran
+            choicePanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+
+            return;
+        }
+        
+        choicePanel.gameObject.SetActive(false);
+    }
+    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        descriptionPanel.gameObject.SetActive(false);
+        choicePanel.gameObject.SetActive(false);
+        
+        if (item != null)
+        {
+            descriptionPanel.gameObject.SetActive(true);
+            descriptionText.text = item.description;
+            
+            // non par rapport a la dimention de l'écran
+            descriptionPanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+
+            return;
+        }
+        
+        descriptionPanel.gameObject.SetActive(false);
     }
 }
