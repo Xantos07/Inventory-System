@@ -7,24 +7,23 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler
+public class InventoryItem : MonoBehaviour
 {
     [SerializeField] private int amountItem;
     [SerializeField] private Image itemImg;
     [SerializeField] private TextMeshProUGUI itemNumberTxt;
     [SerializeField] private Item item;
+    [SerializeField] private InventoryItemUI itemUI;
     //
-    [SerializeField] private RectTransform choicePanel;
-    [SerializeField] private ChoiceActionItem choiceActionItem;
-    [SerializeField] private RectTransform descriptionPanel;
-    private TextMeshProUGUI descriptionText;
+
     private void Start()
     {
         Transform child = transform.GetChild(0);
         itemImg = child.GetComponent<Image>();
         itemImg.color = new Color(0,0,0,0);
         itemNumberTxt = GetComponentInChildren<TextMeshProUGUI>();
-        descriptionText = descriptionPanel.GetComponentInChildren<TextMeshProUGUI>();
+        
+        itemUI = GetComponent<InventoryItemUI>();
     }
     
     public void AddItem(Sprite sprite, int _amount)
@@ -60,6 +59,11 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
     {
         return amountItem;
     }
+    
+    public Image GetImageItem()
+    {
+        return itemImg;
+    }
 
     public void SetItem(Item _newItem)
     {
@@ -70,44 +74,16 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         
         item.name =_newItem.name;
         item.description =_newItem.description;
+        
+        itemUI.SetItem(item);
     }
-    
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if (item != null)
-        {
-            choicePanel.gameObject.SetActive(true);
-            
-            choiceActionItem.SetItem(item);
-            choiceActionItem.UpdateViewButton();
-            
-            descriptionPanel.gameObject.SetActive(false);
-            
-            // non par rapport a la dimention de l'écran
-            choicePanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
 
-            return;
-        }
-        
-        choicePanel.gameObject.SetActive(false);
-    }
-    
-    public void OnPointerEnter(PointerEventData eventData)
+    public void ResetSlot()
     {
-        descriptionPanel.gameObject.SetActive(false);
-        choicePanel.gameObject.SetActive(false);
-        
-        if (item != null)
-        {
-            descriptionPanel.gameObject.SetActive(true);
-            descriptionText.text = item.description;
-            
-            // non par rapport a la dimention de l'écran
-            descriptionPanel.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-
-            return;
-        }
-        
-        descriptionPanel.gameObject.SetActive(false);
+        amountItem = 0;
+        itemImg.sprite = null;
+        itemImg.color = new Color(0,0,0,0);
+        itemNumberTxt.text = "";
+        item = null;
     }
 }

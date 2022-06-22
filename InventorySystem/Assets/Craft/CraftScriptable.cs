@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CraftScriptable : MonoBehaviour
+[CreateAssetMenu(fileName = "Data", menuName = "CraftScriptable", order = 1)]
+public class CraftScriptable : ScriptableObject
 { 
     public List<ressourceCraft> ressource = new List<ressourceCraft>();
 }
@@ -18,15 +19,15 @@ public class ressourceCraft
 
 public enum ItemPositionCraft
 {
-    BottomRigth = 0,
+    BottomLeft = 0,
     BottomMiddle = 1,
-    BottomLeft = 2,
-    
-    MiddleRight = 3,
+    BottomRigth = 2,
+
+    MiddleLeft = 3,
     Middle = 4,
-    MiddleLeft = 5,
+    MiddleRight = 5,
     
-    TopRight = 6,
+    TopLeft = 6,
     TopMiddle = 7,
-    TopLeft = 8
+    TopRight = 8
 }
