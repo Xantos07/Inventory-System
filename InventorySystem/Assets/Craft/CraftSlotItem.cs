@@ -11,6 +11,7 @@ public class CraftSlotItem : MonoBehaviour
     [SerializeField] private Item item;
     [SerializeField] private Image img;
     [SerializeField] private TextMeshProUGUI itemNumberTxt;
+    [SerializeField] private ItemPositionCraft positionCraft;
     private void Start()
     {
         Transform child = transform.GetChild(0);
@@ -25,5 +26,15 @@ public class CraftSlotItem : MonoBehaviour
         img.sprite = sprite;
         img.color = new Color(255,255,255,255);
         itemNumberTxt.text = amountItem.ToString();
+    }
+
+    public Item GetItem()
+    {
+        return item;
+    }
+    
+    public ItemPositionCraft GetItemPositionCraft()
+    {
+        return positionCraft;
     }
 }

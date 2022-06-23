@@ -7,6 +7,10 @@ using UnityEngine;
 public class CraftScriptable : ScriptableObject
 { 
     public List<ressourceCraft> ressource = new List<ressourceCraft>();
+
+    public string craftingItemName;
+    public Sprite CraftingItemImage;
+    public string CraftingItemDescription;
 }
 
 [Serializable]

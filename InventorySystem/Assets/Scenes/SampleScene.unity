@@ -5782,9 +5782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 0}
+  item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
   img: {fileID: 307442984}
   itemNumberTxt: {fileID: 122653524}
+  positionCraft: 7
 --- !u!114 &372162193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7122,6 +7123,7 @@ MonoBehaviour:
   item: {fileID: 0}
   img: {fileID: 1654716841}
   itemNumberTxt: {fileID: 379934064}
+  positionCraft: 5
 --- !u!114 &441203502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9164,9 +9166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 0}
+  item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
   img: {fileID: 648182463}
   itemNumberTxt: {fileID: 1736350574}
+  positionCraft: 3
 --- !u!114 &557827249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14044,6 +14047,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   craftSlotItem: []
+  craftScriptable:
+  - {fileID: 11400000, guid: 0ed6b7f08ae7ebb40a641e11dfe324a6, type: 2}
+  - {fileID: 11400000, guid: 8897452dfd930a046a7c7366e0ef5983, type: 2}
+  craftingSlotItem: {fileID: 933686360}
+  count: 0
 --- !u!224 &843070273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14955,6 +14963,7 @@ GameObject:
   - component: {fileID: 933686362}
   - component: {fileID: 933686361}
   - component: {fileID: 933686359}
+  - component: {fileID: 933686360}
   m_Layer: 5
   m_Name: SlotRendu
   m_TagString: Untagged
@@ -15027,6 +15036,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &933686360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933686357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ac5552ee340884baa3dd5252a811c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImg: {fileID: 543380257}
+  descriptionTxt: {fileID: 1324206137}
 --- !u!114 &933686361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16406,9 +16429,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 0}
+  item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
   img: {fileID: 386220585}
   itemNumberTxt: {fileID: 140153413}
+  positionCraft: 6
 --- !u!114 &1099204136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24410,9 +24434,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 0}
+  item: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}
   img: {fileID: 267984585}
   itemNumberTxt: {fileID: 296220745}
+  positionCraft: 1
 --- !u!114 &1610913493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26589,6 +26614,7 @@ MonoBehaviour:
   item: {fileID: 0}
   img: {fileID: 1643455356}
   itemNumberTxt: {fileID: 313511967}
+  positionCraft: 0
 --- !u!114 &1738651441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28202,9 +28228,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 0}
+  item: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}
   img: {fileID: 1263939692}
   itemNumberTxt: {fileID: 1714809778}
+  positionCraft: 4
 --- !u!114 &1805541861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34876,6 +34903,7 @@ MonoBehaviour:
   item: {fileID: 0}
   img: {fileID: 1460288409}
   itemNumberTxt: {fileID: 1985719533}
+  positionCraft: 8
 --- !u!114 &1962971112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37094,6 +37122,7 @@ MonoBehaviour:
   item: {fileID: 0}
   img: {fileID: 1153892045}
   itemNumberTxt: {fileID: 414940789}
+  positionCraft: 2
 --- !u!114 &2091063992
 MonoBehaviour:
   m_ObjectHideFlags: 0

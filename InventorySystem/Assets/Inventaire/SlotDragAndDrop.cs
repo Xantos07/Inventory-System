@@ -48,6 +48,7 @@ public class SlotDragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler,
             InventoryItem inventoryItem = eventData.pointerDrag.GetComponent<InventoryItem>();
             craft.AddItem(inventoryItem.GetItem(),inventoryItem.GetImageItem().sprite,inventoryItem.GetAmountItem());
             inventoryItem.ResetSlot();
+            Destroy(GetComponent<Item>());
         }
 
         canvasGroup.blocksRaycasts = true;
