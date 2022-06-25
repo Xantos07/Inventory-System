@@ -12,9 +12,11 @@ public class Crafting : MonoBehaviour
     public int count = 0;
     private void Start()
     {
-
         craftSlotItem = new List<CraftSlotItem>(GetComponentsInChildren<CraftSlotItem>());
-        
+    }
+
+    public void verification()
+    {
         for (int i = 0; i < craftScriptable.Count; i++)
         {
             count = 0;
@@ -38,10 +40,5 @@ public class Crafting : MonoBehaviour
                 craftingSlotItem.SetSlot(craftScriptable[i].CraftingItemImage, craftScriptable[i].CraftingItemDescription);
             }
         }
-    }
-
-    public void verification()
-    {
-
     }
 }

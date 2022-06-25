@@ -35,6 +35,14 @@ public class InventoryItem : MonoBehaviour
         itemNumberTxt.text = amountItem.ToString();
     }
     
+    public void SliptItem(Sprite sprite, int _amount)
+    {
+        amountItem = _amount;
+        itemImg.sprite = sprite;
+        itemImg.color = new Color(255,255,255,255);
+        itemNumberTxt.text = amountItem.ToString();
+    }
+    
     public void RemoveItem( int _amount)
     {
         amountItem -= _amount;

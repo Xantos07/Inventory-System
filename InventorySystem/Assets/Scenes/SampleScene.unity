@@ -213,8 +213,8 @@ GameObject:
   - component: {fileID: 12815702}
   - component: {fileID: 12815699}
   - component: {fileID: 12815698}
-  - component: {fileID: 12815697}
   - component: {fileID: 12815703}
+  - component: {fileID: 12815697}
   m_Layer: 5
   m_Name: Slot (58)
   m_TagString: Untagged
@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &12815698
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1059,8 +1060,8 @@ GameObject:
   - component: {fileID: 96924010}
   - component: {fileID: 96924007}
   - component: {fileID: 96924006}
-  - component: {fileID: 96924005}
   - component: {fileID: 96924011}
+  - component: {fileID: 96924005}
   m_Layer: 5
   m_Name: Slot (20)
   m_TagString: Untagged
@@ -1103,6 +1104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &96924006
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1245,8 +1247,8 @@ GameObject:
   - component: {fileID: 101240160}
   - component: {fileID: 101240157}
   - component: {fileID: 101240156}
-  - component: {fileID: 101240155}
   - component: {fileID: 101240161}
+  - component: {fileID: 101240155}
   m_Layer: 5
   m_Name: Slot (48)
   m_TagString: Untagged
@@ -1289,6 +1291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &101240156
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1749,8 +1752,8 @@ GameObject:
   - component: {fileID: 128352781}
   - component: {fileID: 128352778}
   - component: {fileID: 128352777}
-  - component: {fileID: 128352776}
   - component: {fileID: 128352782}
+  - component: {fileID: 128352776}
   m_Layer: 5
   m_Name: Slot (40)
   m_TagString: Untagged
@@ -1793,6 +1796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &128352777
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2170,8 +2174,8 @@ GameObject:
   - component: {fileID: 166138504}
   - component: {fileID: 166138501}
   - component: {fileID: 166138500}
-  - component: {fileID: 166138499}
   - component: {fileID: 166138505}
+  - component: {fileID: 166138499}
   m_Layer: 5
   m_Name: Slot (31)
   m_TagString: Untagged
@@ -2214,6 +2218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &166138500
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2478,7 +2483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.26415092, g: 0.26155925, b: 0.25767174, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2899,8 +2904,8 @@ GameObject:
   - component: {fileID: 202127088}
   - component: {fileID: 202127085}
   - component: {fileID: 202127084}
-  - component: {fileID: 202127083}
   - component: {fileID: 202127089}
+  - component: {fileID: 202127083}
   m_Layer: 5
   m_Name: Slot (53)
   m_TagString: Untagged
@@ -2943,6 +2948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &202127084
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3669,8 +3675,8 @@ GameObject:
   - component: {fileID: 237954427}
   - component: {fileID: 237954424}
   - component: {fileID: 237954423}
-  - component: {fileID: 237954422}
   - component: {fileID: 237954428}
+  - component: {fileID: 237954422}
   m_Layer: 5
   m_Name: Slot (7)
   m_TagString: Untagged
@@ -3713,6 +3719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &237954423
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4325,8 +4332,8 @@ GameObject:
   - component: {fileID: 295075508}
   - component: {fileID: 295075505}
   - component: {fileID: 295075504}
-  - component: {fileID: 295075503}
   - component: {fileID: 295075509}
+  - component: {fileID: 295075503}
   m_Layer: 5
   m_Name: Slot (6)
   m_TagString: Untagged
@@ -4369,6 +4376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &295075504
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4988,8 +4996,8 @@ GameObject:
   - component: {fileID: 325078137}
   - component: {fileID: 325078138}
   - component: {fileID: 325078140}
-  - component: {fileID: 325078139}
   - component: {fileID: 325078141}
+  - component: {fileID: 325078139}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -5131,6 +5139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &325078140
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5741,6 +5750,8 @@ GameObject:
   - component: {fileID: 372162194}
   - component: {fileID: 372162193}
   - component: {fileID: 372162192}
+  - component: {fileID: 372162196}
+  - component: {fileID: 372162197}
   m_Layer: 5
   m_Name: Slot (1)
   m_TagString: Untagged
@@ -5786,6 +5797,7 @@ MonoBehaviour:
   img: {fileID: 307442984}
   itemNumberTxt: {fileID: 122653524}
   positionCraft: 7
+  crafting: {fileID: 843070270}
 --- !u!114 &372162193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5868,6 +5880,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372162190}
   m_CullTransparentMesh: 0
+--- !u!114 &372162196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372162190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &372162197
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372162190}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &379934062
 GameObject:
   m_ObjectHideFlags: 0
@@ -6091,8 +6130,8 @@ GameObject:
   - component: {fileID: 401744570}
   - component: {fileID: 401744567}
   - component: {fileID: 401744566}
-  - component: {fileID: 401744565}
   - component: {fileID: 401744571}
+  - component: {fileID: 401744565}
   m_Layer: 5
   m_Name: Slot (4)
   m_TagString: Untagged
@@ -6135,6 +6174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &401744566
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6856,7 +6896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.2627451, g: 0.2627451, b: 0.25882354, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6894,8 +6934,8 @@ GameObject:
   - component: {fileID: 432165076}
   - component: {fileID: 432165073}
   - component: {fileID: 432165072}
-  - component: {fileID: 432165071}
   - component: {fileID: 432165077}
+  - component: {fileID: 432165071}
   m_Layer: 5
   m_Name: Slot (18)
   m_TagString: Untagged
@@ -6938,6 +6978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &432165072
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7079,6 +7120,8 @@ GameObject:
   - component: {fileID: 441203503}
   - component: {fileID: 441203502}
   - component: {fileID: 441203501}
+  - component: {fileID: 441203505}
+  - component: {fileID: 441203506}
   m_Layer: 5
   m_Name: Slot (5)
   m_TagString: Untagged
@@ -7124,6 +7167,7 @@ MonoBehaviour:
   img: {fileID: 1654716841}
   itemNumberTxt: {fileID: 379934064}
   positionCraft: 5
+  crafting: {fileID: 843070270}
 --- !u!114 &441203502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7206,6 +7250,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441203499}
   m_CullTransparentMesh: 0
+--- !u!114 &441203505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441203499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &441203506
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441203499}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &445727694
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,7 +7438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.2627451, g: 0.2627451, b: 0.25882354, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7405,8 +7476,8 @@ GameObject:
   - component: {fileID: 449875587}
   - component: {fileID: 449875584}
   - component: {fileID: 449875583}
-  - component: {fileID: 449875582}
   - component: {fileID: 449875588}
+  - component: {fileID: 449875582}
   m_Layer: 5
   m_Name: Slot (15)
   m_TagString: Untagged
@@ -7449,6 +7520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &449875583
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7591,8 +7663,8 @@ GameObject:
   - component: {fileID: 455356995}
   - component: {fileID: 455356992}
   - component: {fileID: 455356991}
-  - component: {fileID: 455356990}
   - component: {fileID: 455356996}
+  - component: {fileID: 455356990}
   m_Layer: 5
   m_Name: Slot (22)
   m_TagString: Untagged
@@ -7635,6 +7707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &455356991
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7927,8 +8000,8 @@ GameObject:
   - component: {fileID: 477682855}
   - component: {fileID: 477682852}
   - component: {fileID: 477682851}
-  - component: {fileID: 477682850}
   - component: {fileID: 477682856}
+  - component: {fileID: 477682850}
   m_Layer: 5
   m_Name: Slot (35)
   m_TagString: Untagged
@@ -7971,6 +8044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &477682851
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8214,7 +8288,7 @@ RectTransform:
   - {fileID: 1610913491}
   - {fileID: 2091063990}
   m_Father: {fileID: 713768388}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 1}
@@ -8297,8 +8371,8 @@ GameObject:
   - component: {fileID: 516756197}
   - component: {fileID: 516756194}
   - component: {fileID: 516756193}
-  - component: {fileID: 516756192}
   - component: {fileID: 516756198}
+  - component: {fileID: 516756192}
   m_Layer: 5
   m_Name: Slot (44)
   m_TagString: Untagged
@@ -8341,6 +8415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &516756193
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9125,6 +9200,8 @@ GameObject:
   - component: {fileID: 557827250}
   - component: {fileID: 557827249}
   - component: {fileID: 557827248}
+  - component: {fileID: 557827252}
+  - component: {fileID: 557827253}
   m_Layer: 5
   m_Name: Slot (3)
   m_TagString: Untagged
@@ -9170,6 +9247,7 @@ MonoBehaviour:
   img: {fileID: 648182463}
   itemNumberTxt: {fileID: 1736350574}
   positionCraft: 3
+  crafting: {fileID: 843070270}
 --- !u!114 &557827249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9252,6 +9330,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557827246}
   m_CullTransparentMesh: 0
+--- !u!114 &557827252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557827246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &557827253
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557827246}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &559595418
 GameObject:
   m_ObjectHideFlags: 0
@@ -9900,8 +10005,8 @@ GameObject:
   - component: {fileID: 592906157}
   - component: {fileID: 592906154}
   - component: {fileID: 592906153}
-  - component: {fileID: 592906152}
   - component: {fileID: 592906158}
+  - component: {fileID: 592906152}
   m_Layer: 5
   m_Name: Slot (28)
   m_TagString: Untagged
@@ -9944,6 +10049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &592906153
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10366,8 +10472,8 @@ GameObject:
   - component: {fileID: 647307313}
   - component: {fileID: 647307317}
   - component: {fileID: 647307316}
-  - component: {fileID: 647307315}
   - component: {fileID: 647307320}
+  - component: {fileID: 647307315}
   m_Layer: 5
   m_Name: Slot (59)
   m_TagString: Untagged
@@ -10427,6 +10533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &647307316
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11254,8 +11361,8 @@ GameObject:
   - component: {fileID: 683439624}
   - component: {fileID: 683439621}
   - component: {fileID: 683439620}
-  - component: {fileID: 683439619}
   - component: {fileID: 683439625}
+  - component: {fileID: 683439619}
   m_Layer: 5
   m_Name: Slot (43)
   m_TagString: Untagged
@@ -11298,6 +11405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &683439620
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11951,8 +12059,8 @@ GameObject:
   - component: {fileID: 712203842}
   - component: {fileID: 712203839}
   - component: {fileID: 712203838}
-  - component: {fileID: 712203837}
   - component: {fileID: 712203843}
+  - component: {fileID: 712203837}
   m_Layer: 5
   m_Name: Slot (56)
   m_TagString: Untagged
@@ -11995,6 +12103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &712203838
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12152,9 +12261,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 495185283}
   - {fileID: 933686358}
   - {fileID: 1030163295}
+  - {fileID: 495185283}
   m_Father: {fileID: 843070273}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12758,8 +12867,8 @@ GameObject:
   - component: {fileID: 741919345}
   - component: {fileID: 741919342}
   - component: {fileID: 741919341}
-  - component: {fileID: 741919340}
   - component: {fileID: 741919346}
+  - component: {fileID: 741919340}
   m_Layer: 5
   m_Name: Slot (33)
   m_TagString: Untagged
@@ -12802,6 +12911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &741919341
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12944,8 +13054,8 @@ GameObject:
   - component: {fileID: 744860084}
   - component: {fileID: 744860081}
   - component: {fileID: 744860080}
-  - component: {fileID: 744860079}
   - component: {fileID: 744860085}
+  - component: {fileID: 744860079}
   m_Layer: 5
   m_Name: Slot (11)
   m_TagString: Untagged
@@ -12988,6 +13098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &744860080
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13130,8 +13241,8 @@ GameObject:
   - component: {fileID: 765738106}
   - component: {fileID: 765738103}
   - component: {fileID: 765738102}
-  - component: {fileID: 765738101}
   - component: {fileID: 765738107}
+  - component: {fileID: 765738101}
   m_Layer: 5
   m_Name: Slot (45)
   m_TagString: Untagged
@@ -13174,6 +13285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &765738102
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13316,8 +13428,8 @@ GameObject:
   - component: {fileID: 780869497}
   - component: {fileID: 780869494}
   - component: {fileID: 780869493}
-  - component: {fileID: 780869492}
   - component: {fileID: 780869498}
+  - component: {fileID: 780869492}
   m_Layer: 5
   m_Name: Slot (12)
   m_TagString: Untagged
@@ -13360,6 +13472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &780869493
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13577,8 +13690,8 @@ GameObject:
   - component: {fileID: 833772592}
   - component: {fileID: 833772589}
   - component: {fileID: 833772588}
-  - component: {fileID: 833772587}
   - component: {fileID: 833772593}
+  - component: {fileID: 833772587}
   m_Layer: 5
   m_Name: Slot (46)
   m_TagString: Untagged
@@ -13621,6 +13734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &833772588
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14046,7 +14160,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605fcd2c84a769a49ad0a3a158f1f99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  craftSlotItem: []
+  craftSlotItem:
+  - {fileID: 1099204135}
+  - {fileID: 372162192}
+  - {fileID: 1962971111}
+  - {fileID: 557827248}
+  - {fileID: 1805541860}
+  - {fileID: 441203501}
+  - {fileID: 1738651440}
+  - {fileID: 1610913492}
+  - {fileID: 2091063991}
   craftScriptable:
   - {fileID: 11400000, guid: 0ed6b7f08ae7ebb40a641e11dfe324a6, type: 2}
   - {fileID: 11400000, guid: 8897452dfd930a046a7c7366e0ef5983, type: 2}
@@ -14070,7 +14193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.9999, y: -540.4}
+  m_AnchoredPosition: {x: 960, y: -540.8}
   m_SizeDelta: {x: 1919.9999, y: 1080.7944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &845077395
@@ -14087,8 +14210,8 @@ GameObject:
   - component: {fileID: 845077402}
   - component: {fileID: 845077399}
   - component: {fileID: 845077398}
-  - component: {fileID: 845077397}
   - component: {fileID: 845077403}
+  - component: {fileID: 845077397}
   m_Layer: 5
   m_Name: Slot (8)
   m_TagString: Untagged
@@ -14131,6 +14254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &845077398
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14985,7 +15109,7 @@ RectTransform:
   - {fileID: 543380256}
   - {fileID: 2072398525}
   m_Father: {fileID: 713768388}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15352,8 +15476,8 @@ GameObject:
   - component: {fileID: 999124297}
   - component: {fileID: 999124294}
   - component: {fileID: 999124293}
-  - component: {fileID: 999124292}
   - component: {fileID: 999124298}
+  - component: {fileID: 999124292}
   m_Layer: 5
   m_Name: Slot (32)
   m_TagString: Untagged
@@ -15396,6 +15520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &999124293
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -15987,7 +16112,7 @@ RectTransform:
   m_Children:
   - {fileID: 1770948174}
   m_Father: {fileID: 713768388}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -16159,8 +16284,8 @@ GameObject:
   - component: {fileID: 1083947453}
   - component: {fileID: 1083947450}
   - component: {fileID: 1083947449}
-  - component: {fileID: 1083947448}
   - component: {fileID: 1083947454}
+  - component: {fileID: 1083947448}
   m_Layer: 5
   m_Name: Slot (2)
   m_TagString: Untagged
@@ -16203,6 +16328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1083947449
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16344,6 +16470,8 @@ GameObject:
   - component: {fileID: 1099204136}
   - component: {fileID: 1099204134}
   - component: {fileID: 1099204135}
+  - component: {fileID: 1099204138}
+  - component: {fileID: 1099204139}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -16433,6 +16561,7 @@ MonoBehaviour:
   img: {fileID: 386220585}
   itemNumberTxt: {fileID: 140153413}
   positionCraft: 6
+  crafting: {fileID: 843070270}
 --- !u!114 &1099204136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16471,6 +16600,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099204132}
   m_CullTransparentMesh: 0
+--- !u!114 &1099204138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099204132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &1099204139
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099204132}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1136048922
 GameObject:
   m_ObjectHideFlags: 0
@@ -16485,8 +16641,8 @@ GameObject:
   - component: {fileID: 1136048929}
   - component: {fileID: 1136048926}
   - component: {fileID: 1136048925}
-  - component: {fileID: 1136048924}
   - component: {fileID: 1136048930}
+  - component: {fileID: 1136048924}
   m_Layer: 5
   m_Name: Slot (38)
   m_TagString: Untagged
@@ -16529,6 +16685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1136048925
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16671,8 +16828,8 @@ GameObject:
   - component: {fileID: 1139333059}
   - component: {fileID: 1139333056}
   - component: {fileID: 1139333055}
-  - component: {fileID: 1139333054}
   - component: {fileID: 1139333060}
+  - component: {fileID: 1139333054}
   m_Layer: 5
   m_Name: Slot (42)
   m_TagString: Untagged
@@ -16715,6 +16872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1139333055
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16857,8 +17015,8 @@ GameObject:
   - component: {fileID: 1146150078}
   - component: {fileID: 1146150075}
   - component: {fileID: 1146150074}
-  - component: {fileID: 1146150073}
   - component: {fileID: 1146150079}
+  - component: {fileID: 1146150073}
   m_Layer: 5
   m_Name: Slot (24)
   m_TagString: Untagged
@@ -16901,6 +17059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1146150074
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17118,8 +17277,8 @@ GameObject:
   - component: {fileID: 1169979909}
   - component: {fileID: 1169979906}
   - component: {fileID: 1169979905}
-  - component: {fileID: 1169979904}
   - component: {fileID: 1169979910}
+  - component: {fileID: 1169979904}
   m_Layer: 5
   m_Name: Slot (3)
   m_TagString: Untagged
@@ -17162,6 +17321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1169979905
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17610,8 +17770,8 @@ GameObject:
   - component: {fileID: 1221659946}
   - component: {fileID: 1221659943}
   - component: {fileID: 1221659942}
-  - component: {fileID: 1221659941}
   - component: {fileID: 1221659947}
+  - component: {fileID: 1221659941}
   m_Layer: 5
   m_Name: Slot (34)
   m_TagString: Untagged
@@ -17654,6 +17814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1221659942
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18273,8 +18434,8 @@ GameObject:
   - component: {fileID: 1233552565}
   - component: {fileID: 1233552562}
   - component: {fileID: 1233552561}
-  - component: {fileID: 1233552560}
   - component: {fileID: 1233552566}
+  - component: {fileID: 1233552560}
   m_Layer: 5
   m_Name: Slot (54)
   m_TagString: Untagged
@@ -18317,6 +18478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1233552561
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18459,8 +18621,8 @@ GameObject:
   - component: {fileID: 1257700356}
   - component: {fileID: 1257700353}
   - component: {fileID: 1257700352}
-  - component: {fileID: 1257700351}
   - component: {fileID: 1257700357}
+  - component: {fileID: 1257700351}
   m_Layer: 5
   m_Name: Slot (30)
   m_TagString: Untagged
@@ -18503,6 +18665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1257700352
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18904,8 +19067,8 @@ GameObject:
   - component: {fileID: 1292778231}
   - component: {fileID: 1292778228}
   - component: {fileID: 1292778227}
-  - component: {fileID: 1292778226}
   - component: {fileID: 1292778232}
+  - component: {fileID: 1292778226}
   m_Layer: 5
   m_Name: Slot (23)
   m_TagString: Untagged
@@ -18948,6 +19111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1292778227
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19358,8 +19522,8 @@ GameObject:
   - component: {fileID: 1315696150}
   - component: {fileID: 1315696147}
   - component: {fileID: 1315696146}
-  - component: {fileID: 1315696145}
   - component: {fileID: 1315696151}
+  - component: {fileID: 1315696145}
   m_Layer: 5
   m_Name: Slot (36)
   m_TagString: Untagged
@@ -19402,6 +19566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1315696146
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19568,7 +19733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionMouse: {x: 0, y: 0, z: 0}
-  speed: 0.21
+  speed: 0.6
   distanceToRay: 100
   anim: {fileID: 0}
 --- !u!65 &1319899968
@@ -19781,8 +19946,8 @@ GameObject:
   - component: {fileID: 1346060122}
   - component: {fileID: 1346060119}
   - component: {fileID: 1346060118}
-  - component: {fileID: 1346060117}
   - component: {fileID: 1346060123}
+  - component: {fileID: 1346060117}
   m_Layer: 5
   m_Name: Slot (41)
   m_TagString: Untagged
@@ -19825,6 +19990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1346060118
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20369,8 +20535,8 @@ GameObject:
   - component: {fileID: 1382102932}
   - component: {fileID: 1382102929}
   - component: {fileID: 1382102928}
-  - component: {fileID: 1382102927}
   - component: {fileID: 1382102933}
+  - component: {fileID: 1382102927}
   m_Layer: 5
   m_Name: Slot (49)
   m_TagString: Untagged
@@ -20413,6 +20579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1382102928
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20555,8 +20722,8 @@ GameObject:
   - component: {fileID: 1401047783}
   - component: {fileID: 1401047780}
   - component: {fileID: 1401047779}
-  - component: {fileID: 1401047778}
   - component: {fileID: 1401047784}
+  - component: {fileID: 1401047778}
   m_Layer: 5
   m_Name: Slot (29)
   m_TagString: Untagged
@@ -20599,6 +20766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1401047779
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -21937,8 +22105,8 @@ GameObject:
   - component: {fileID: 1469566516}
   - component: {fileID: 1469566513}
   - component: {fileID: 1469566512}
-  - component: {fileID: 1469566511}
   - component: {fileID: 1469566517}
+  - component: {fileID: 1469566511}
   m_Layer: 5
   m_Name: Slot (10)
   m_TagString: Untagged
@@ -21981,6 +22149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1469566512
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22294,8 +22463,8 @@ GameObject:
   - component: {fileID: 1483691912}
   - component: {fileID: 1483691909}
   - component: {fileID: 1483691908}
-  - component: {fileID: 1483691907}
   - component: {fileID: 1483691913}
+  - component: {fileID: 1483691907}
   m_Layer: 5
   m_Name: Slot (17)
   m_TagString: Untagged
@@ -22338,6 +22507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1483691908
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22480,8 +22650,8 @@ GameObject:
   - component: {fileID: 1484814581}
   - component: {fileID: 1484814578}
   - component: {fileID: 1484814577}
-  - component: {fileID: 1484814576}
   - component: {fileID: 1484814582}
+  - component: {fileID: 1484814576}
   m_Layer: 5
   m_Name: Slot (27)
   m_TagString: Untagged
@@ -22524,6 +22694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1484814577
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -23176,8 +23347,8 @@ GameObject:
   - component: {fileID: 1516097398}
   - component: {fileID: 1516097395}
   - component: {fileID: 1516097394}
-  - component: {fileID: 1516097393}
   - component: {fileID: 1516097399}
+  - component: {fileID: 1516097393}
   m_Layer: 5
   m_Name: Slot (26)
   m_TagString: Untagged
@@ -23220,6 +23391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1516097394
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -23999,8 +24171,8 @@ GameObject:
   - component: {fileID: 1604349206}
   - component: {fileID: 1604349203}
   - component: {fileID: 1604349202}
-  - component: {fileID: 1604349201}
   - component: {fileID: 1604349207}
+  - component: {fileID: 1604349201}
   m_Layer: 5
   m_Name: Slot (57)
   m_TagString: Untagged
@@ -24043,6 +24215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1604349202
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24393,6 +24566,8 @@ GameObject:
   - component: {fileID: 1610913494}
   - component: {fileID: 1610913493}
   - component: {fileID: 1610913492}
+  - component: {fileID: 1610913496}
+  - component: {fileID: 1610913497}
   m_Layer: 5
   m_Name: Slot (7)
   m_TagString: Untagged
@@ -24438,6 +24613,7 @@ MonoBehaviour:
   img: {fileID: 267984585}
   itemNumberTxt: {fileID: 296220745}
   positionCraft: 1
+  crafting: {fileID: 843070270}
 --- !u!114 &1610913493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24520,6 +24696,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610913490}
   m_CullTransparentMesh: 0
+--- !u!114 &1610913496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610913490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &1610913497
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610913490}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1614389244
 GameObject:
   m_ObjectHideFlags: 0
@@ -24534,8 +24737,8 @@ GameObject:
   - component: {fileID: 1614389251}
   - component: {fileID: 1614389248}
   - component: {fileID: 1614389247}
-  - component: {fileID: 1614389246}
   - component: {fileID: 1614389252}
+  - component: {fileID: 1614389246}
   m_Layer: 5
   m_Name: Slot (47)
   m_TagString: Untagged
@@ -24578,6 +24781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1614389247
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24795,8 +24999,8 @@ GameObject:
   - component: {fileID: 1633472055}
   - component: {fileID: 1633472052}
   - component: {fileID: 1633472051}
-  - component: {fileID: 1633472050}
   - component: {fileID: 1633472056}
+  - component: {fileID: 1633472050}
   m_Layer: 5
   m_Name: Slot (1)
   m_TagString: Untagged
@@ -24839,6 +25043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1633472051
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24981,8 +25186,8 @@ GameObject:
   - component: {fileID: 1639106607}
   - component: {fileID: 1639106604}
   - component: {fileID: 1639106603}
-  - component: {fileID: 1639106602}
   - component: {fileID: 1639106608}
+  - component: {fileID: 1639106602}
   m_Layer: 5
   m_Name: Slot (51)
   m_TagString: Untagged
@@ -25025,6 +25230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1639106603
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25833,8 +26039,8 @@ GameObject:
   - component: {fileID: 1693690426}
   - component: {fileID: 1693690423}
   - component: {fileID: 1693690422}
-  - component: {fileID: 1693690421}
   - component: {fileID: 1693690427}
+  - component: {fileID: 1693690421}
   m_Layer: 5
   m_Name: Slot (14)
   m_TagString: Untagged
@@ -25877,6 +26083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1693690422
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26570,6 +26777,8 @@ GameObject:
   - component: {fileID: 1738651442}
   - component: {fileID: 1738651441}
   - component: {fileID: 1738651440}
+  - component: {fileID: 1738651444}
+  - component: {fileID: 1738651445}
   m_Layer: 5
   m_Name: Slot (6)
   m_TagString: Untagged
@@ -26615,6 +26824,7 @@ MonoBehaviour:
   img: {fileID: 1643455356}
   itemNumberTxt: {fileID: 313511967}
   positionCraft: 0
+  crafting: {fileID: 843070270}
 --- !u!114 &1738651441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26697,6 +26907,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738651438}
   m_CullTransparentMesh: 0
+--- !u!114 &1738651444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738651438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &1738651445
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738651438}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1747842440
 GameObject:
   m_ObjectHideFlags: 0
@@ -27816,8 +28053,8 @@ GameObject:
   - component: {fileID: 1781934419}
   - component: {fileID: 1781934416}
   - component: {fileID: 1781934415}
-  - component: {fileID: 1781934414}
   - component: {fileID: 1781934420}
+  - component: {fileID: 1781934414}
   m_Layer: 5
   m_Name: Slot (9)
   m_TagString: Untagged
@@ -27860,6 +28097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1781934415
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28002,8 +28240,8 @@ GameObject:
   - component: {fileID: 1791370942}
   - component: {fileID: 1791370939}
   - component: {fileID: 1791370938}
-  - component: {fileID: 1791370937}
   - component: {fileID: 1791370943}
+  - component: {fileID: 1791370937}
   m_Layer: 5
   m_Name: Slot (52)
   m_TagString: Untagged
@@ -28046,6 +28284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1791370938
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28187,6 +28426,8 @@ GameObject:
   - component: {fileID: 1805541862}
   - component: {fileID: 1805541861}
   - component: {fileID: 1805541860}
+  - component: {fileID: 1805541864}
+  - component: {fileID: 1805541865}
   m_Layer: 5
   m_Name: Slot (4)
   m_TagString: Untagged
@@ -28232,6 +28473,7 @@ MonoBehaviour:
   img: {fileID: 1263939692}
   itemNumberTxt: {fileID: 1714809778}
   positionCraft: 4
+  crafting: {fileID: 843070270}
 --- !u!114 &1805541861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28314,6 +28556,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805541858}
   m_CullTransparentMesh: 0
+--- !u!114 &1805541864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805541858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &1805541865
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805541858}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1806003366
 GameObject:
   m_ObjectHideFlags: 0
@@ -28403,8 +28672,8 @@ GameObject:
   - component: {fileID: 1810058418}
   - component: {fileID: 1810058415}
   - component: {fileID: 1810058414}
-  - component: {fileID: 1810058413}
   - component: {fileID: 1810058419}
+  - component: {fileID: 1810058413}
   m_Layer: 5
   m_Name: Slot (37)
   m_TagString: Untagged
@@ -28447,6 +28716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1810058414
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34173,8 +34443,8 @@ GameObject:
   - component: {fileID: 1919463671}
   - component: {fileID: 1919463668}
   - component: {fileID: 1919463667}
-  - component: {fileID: 1919463666}
   - component: {fileID: 1919463672}
+  - component: {fileID: 1919463666}
   m_Layer: 5
   m_Name: Slot (19)
   m_TagString: Untagged
@@ -34217,6 +34487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1919463667
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34434,8 +34705,8 @@ GameObject:
   - component: {fileID: 1922096990}
   - component: {fileID: 1922096987}
   - component: {fileID: 1922096986}
-  - component: {fileID: 1922096985}
   - component: {fileID: 1922096991}
+  - component: {fileID: 1922096985}
   m_Layer: 5
   m_Name: Slot (13)
   m_TagString: Untagged
@@ -34478,6 +34749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1922096986
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34674,8 +34946,8 @@ GameObject:
   - component: {fileID: 1942300124}
   - component: {fileID: 1942300121}
   - component: {fileID: 1942300120}
-  - component: {fileID: 1942300119}
   - component: {fileID: 1942300125}
+  - component: {fileID: 1942300119}
   m_Layer: 5
   m_Name: Slot (21)
   m_TagString: Untagged
@@ -34718,6 +34990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1942300120
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34859,6 +35132,8 @@ GameObject:
   - component: {fileID: 1962971113}
   - component: {fileID: 1962971112}
   - component: {fileID: 1962971111}
+  - component: {fileID: 1962971115}
+  - component: {fileID: 1962971116}
   m_Layer: 5
   m_Name: Slot (2)
   m_TagString: Untagged
@@ -34904,6 +35179,7 @@ MonoBehaviour:
   img: {fileID: 1460288409}
   itemNumberTxt: {fileID: 1985719533}
   positionCraft: 8
+  crafting: {fileID: 843070270}
 --- !u!114 &1962971112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34986,6 +35262,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962971109}
   m_CullTransparentMesh: 0
+--- !u!114 &1962971115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962971109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &1962971116
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962971109}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1967437926
 GameObject:
   m_ObjectHideFlags: 0
@@ -35359,8 +35662,8 @@ GameObject:
   - component: {fileID: 1995111591}
   - component: {fileID: 1995111588}
   - component: {fileID: 1995111587}
-  - component: {fileID: 1995111586}
   - component: {fileID: 1995111592}
+  - component: {fileID: 1995111586}
   m_Layer: 5
   m_Name: Slot (39)
   m_TagString: Untagged
@@ -35403,6 +35706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &1995111587
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -35829,8 +36133,8 @@ GameObject:
   - component: {fileID: 2031798166}
   - component: {fileID: 2031798163}
   - component: {fileID: 2031798162}
-  - component: {fileID: 2031798161}
   - component: {fileID: 2031798167}
+  - component: {fileID: 2031798161}
   m_Layer: 5
   m_Name: Slot (25)
   m_TagString: Untagged
@@ -35873,6 +36177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &2031798162
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36149,8 +36454,8 @@ GameObject:
   - component: {fileID: 2036805788}
   - component: {fileID: 2036805785}
   - component: {fileID: 2036805784}
-  - component: {fileID: 2036805783}
   - component: {fileID: 2036805789}
+  - component: {fileID: 2036805783}
   m_Layer: 5
   m_Name: Slot (55)
   m_TagString: Untagged
@@ -36193,6 +36498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &2036805784
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36893,8 +37199,8 @@ GameObject:
   - component: {fileID: 2079471911}
   - component: {fileID: 2079471908}
   - component: {fileID: 2079471907}
-  - component: {fileID: 2079471906}
   - component: {fileID: 2079471912}
+  - component: {fileID: 2079471906}
   m_Layer: 5
   m_Name: Slot (16)
   m_TagString: Untagged
@@ -36937,6 +37243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &2079471907
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37078,6 +37385,8 @@ GameObject:
   - component: {fileID: 2091063993}
   - component: {fileID: 2091063992}
   - component: {fileID: 2091063991}
+  - component: {fileID: 2091063995}
+  - component: {fileID: 2091063996}
   m_Layer: 5
   m_Name: Slot (8)
   m_TagString: Untagged
@@ -37123,6 +37432,7 @@ MonoBehaviour:
   img: {fileID: 1153892045}
   itemNumberTxt: {fileID: 414940789}
   positionCraft: 2
+  crafting: {fileID: 843070270}
 --- !u!114 &2091063992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37205,6 +37515,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091063989}
   m_CullTransparentMesh: 0
+--- !u!114 &2091063995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091063989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400cbd303e9b9148abd9f8ffdcd4be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
+--- !u!225 &2091063996
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091063989}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2091480207
 GameObject:
   m_ObjectHideFlags: 0
@@ -37353,8 +37690,8 @@ GameObject:
   - component: {fileID: 2095589051}
   - component: {fileID: 2095589048}
   - component: {fileID: 2095589047}
-  - component: {fileID: 2095589046}
   - component: {fileID: 2095589052}
+  - component: {fileID: 2095589046}
   m_Layer: 5
   m_Name: Slot (5)
   m_TagString: Untagged
@@ -37397,6 +37734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &2095589047
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37745,8 +38083,8 @@ GameObject:
   - component: {fileID: 2145404816}
   - component: {fileID: 2145404813}
   - component: {fileID: 2145404812}
-  - component: {fileID: 2145404811}
   - component: {fileID: 2145404817}
+  - component: {fileID: 2145404811}
   m_Layer: 5
   m_Name: Slot (50)
   m_TagString: Untagged
@@ -37789,6 +38127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  slotDivisionCount: []
 --- !u!225 &2145404812
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -38571,6 +38910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d,
+        type: 3}
+      propertyPath: amount
+      value: 31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}

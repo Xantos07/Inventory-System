@@ -12,10 +12,12 @@ public class CraftSlotItem : MonoBehaviour
     [SerializeField] private Image img;
     [SerializeField] private TextMeshProUGUI itemNumberTxt;
     [SerializeField] private ItemPositionCraft positionCraft;
+    [SerializeField] private Crafting crafting;
     private void Start()
     {
         Transform child = transform.GetChild(0);
         img = child.GetComponent<Image>();
+
         img.color = new Color(0,0,0,0);
     }
 
@@ -26,6 +28,8 @@ public class CraftSlotItem : MonoBehaviour
         img.sprite = sprite;
         img.color = new Color(255,255,255,255);
         itemNumberTxt.text = amountItem.ToString();
+        
+        crafting.verification();
     }
 
     public Item GetItem()

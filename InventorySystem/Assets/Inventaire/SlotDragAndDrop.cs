@@ -3,67 +3,69 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
-public class SlotDragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler
 {
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     [SerializeField] private Vector2 orinalPostion;
     private CanvasGroup canvasGroup;
+    private InventoryItem inventoryItem;
 
+    public List<InventoryItem> slotDivisionCount;
+    
+    private PointerEventData eventDataEnter;
+    private bool isDragging = false;
+    
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+        inventoryItem = GetComponent<InventoryItem>();
         canvasGroup = GetComponent<CanvasGroup>();
-        orinalPostion = rectTransform.anchoredPosition;
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    private void Update()
     {
-        orinalPostion = rectTransform.anchoredPosition;
-        Debug.Log($"alros vous etes en {orinalPostion} + {name}");
-    }
-    
-    public void OnDrag(PointerEventData eventData)
-    {
-        rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
-        canvasGroup.blocksRaycasts = false;
-    }
+        if (!isDragging)
+            return;
+        
+        transform.position = Input.mousePosition;
 
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        if (eventData.pointerEnter == null || eventData.pointerEnter != null &&
-            eventData.pointerEnter.GetComponent<SlotDragAndDrop>() == null)
+        if (Input.GetMouseButtonDown(0))
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = orinalPostion;   
+            if (eventDataEnter.pointerClick != null &&eventDataEnter.pointerClick.GetComponent<SlotDragAndDrop>() != null)
+            {
+                GetComponent<RectTransform>().anchoredPosition = eventDataEnter.pointerClick.GetComponent<SlotDragAndDrop>().GetOrinalPostion();
+                eventDataEnter.pointerClick.GetComponent<SlotDragAndDrop>().SetOrinalPostion(orinalPostion);
+            }
+            else
+            {
+                GetComponent<RectTransform>().anchoredPosition = orinalPostion;   
+            }
+
+            canvasGroup.blocksRaycasts = isDragging;
+            isDragging = !isDragging;
         }
         
-        
-        
-        CraftSlotItem craft = eventData.pointerEnter.GetComponent<CraftSlotItem>();
-        
-        if (craft != null)
+        if (Input.GetMouseButton(1))
         {
-            InventoryItem inventoryItem = eventData.pointerDrag.GetComponent<InventoryItem>();
-            craft.AddItem(inventoryItem.GetItem(),inventoryItem.GetImageItem().sprite,inventoryItem.GetAmountItem());
-            inventoryItem.ResetSlot();
-            Destroy(GetComponent<Item>());
+Debug.Log("tu es entrain de diviser");
         }
-
-        canvasGroup.blocksRaycasts = true;
-
     }
 
-    public void OnDrop(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
-        // Je drag sur celui que je pointe 
-        eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition =
-            GetComponent<RectTransform>().anchoredPosition;
-        
-        GetComponent<SlotDragAndDrop>().SetOrinalPostion(eventData.pointerDrag.GetComponent<SlotDragAndDrop>().GetOrinalPostion());
-    }
+        orinalPostion = rectTransform.anchoredPosition;
 
+        if(eventData.pointerClick.GetComponent<SlotDragAndDrop>() == null)
+            return;
+
+        canvasGroup.blocksRaycasts = isDragging;
+        isDragging = !isDragging;
+        
+        eventDataEnter = eventData;
+    }
     public void SetOrinalPostion(Vector2 _newPostion)
     {
         orinalPostion = _newPostion;
@@ -72,6 +74,7 @@ public class SlotDragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler,
     
     public Vector2 GetOrinalPostion()
     {
+        orinalPostion = rectTransform.anchoredPosition;
         return orinalPostion;
     }
 }
