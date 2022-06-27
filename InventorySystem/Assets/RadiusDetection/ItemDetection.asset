@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ItemDetection
   m_EditorClassIdentifier: 
   radius: 3.5
-  angleView: 40
+  angleView: 90
   detectionElement: 2
   colorCircleDetection: {r: 0.7075472, g: 0.60602826, b: 0.2236116, a: 1}
   colorLineDetection: {r: 0.7176471, g: 0.52012646, b: 0.3058824, a: 1}
