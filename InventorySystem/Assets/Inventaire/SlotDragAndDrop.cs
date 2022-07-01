@@ -12,9 +12,12 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
     private RectTransform rectTransform;
     [SerializeField] private Vector2 orinalPostion;
     private CanvasGroup canvasGroup;
+    
     private InventoryItem inventoryItem;
+    private CraftSlotItem craftSlotItem;
 
     public List<InventoryItem> slotDivisionCount;
+    public List<CraftSlotItem> slotCraftDivisionCount;
     
     private PointerEventData eventDataClick;
     private PointerEventData eventDataEnter;
@@ -25,6 +28,7 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
     {
         rectTransform = GetComponent<RectTransform>();
         inventoryItem = GetComponent<InventoryItem>();
+        craftSlotItem = GetComponent<CraftSlotItem>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
@@ -33,31 +37,57 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
         if (!isDragging)
         {
             slotDivisionCount.Clear();
+            slotCraftDivisionCount.Clear();
             itemCount = 0;
             return;   
         }
 
         transform.position = Input.mousePosition;
+        transform.SetAsLastSibling();
 
+                
         if (Input.GetMouseButtonDown(0))
         {
-            if (eventDataClick.pointerClick != null &&eventDataClick.pointerClick.GetComponent<SlotDragAndDrop>() != null)
+            if (eventDataClick.pointerClick != null &&
+                eventDataClick.pointerClick.GetComponent<SlotDragAndDrop>() != null &&
+                eventDataClick.pointerClick.GetComponent<InventoryItem>() != null && 
+                inventoryItem !=null)
             {
-                GetComponent<RectTransform>().anchoredPosition = eventDataClick.pointerClick.GetComponent<SlotDragAndDrop>().GetOrinalPostion();
-                eventDataClick.pointerClick.GetComponent<SlotDragAndDrop>().SetOrinalPostion(orinalPostion);
-            }
-            else
+                eventDataClick.pointerClick.GetComponent<InventoryItem>().AddItem(inventoryItem.GetImageItem().sprite,inventoryItem.GetAmountItem());
+                eventDataClick.pointerClick.GetComponent<InventoryItem>().SetItem(inventoryItem.GetItem());
+                inventoryItem.ResetSlot();
+                
+            } else if (eventDataClick.pointerClick != null &&
+                       eventDataClick.pointerClick.GetComponent<SlotDragAndDrop>() != null &&
+                       eventDataClick.pointerClick.GetComponent<InventoryItem>() != null &&
+                       craftSlotItem != null)
             {
-                GetComponent<RectTransform>().anchoredPosition = orinalPostion;   
+                eventDataClick.pointerClick.GetComponent<InventoryItem>().AddItem(craftSlotItem.GetImageItem().sprite,craftSlotItem.GetAmountItem());
+                eventDataClick.pointerClick.GetComponent<InventoryItem>().SetItem(craftSlotItem.GetItem());
+                craftSlotItem.ResetSlot();
             }
-
+            else if (eventDataClick.pointerClick != null && inventoryItem !=null &&
+                                    eventDataClick.pointerClick.GetComponent<CraftSlotItem>() != null)
+            {
+ 
+                eventDataClick.pointerClick.GetComponent<CraftSlotItem>().AddItem(inventoryItem.GetItem(),inventoryItem.GetImageItem().sprite,inventoryItem.GetAmountItem());
+                inventoryItem.ResetSlot();
+                
+            }else if (eventDataClick.pointerClick != null && craftSlotItem !=null &&
+                                eventDataClick.pointerClick.GetComponent<CraftSlotItem>() != null)
+            {
+ 
+                eventDataClick.pointerClick.GetComponent<CraftSlotItem>().AddItem(craftSlotItem.GetItem(),craftSlotItem.GetImageItem().sprite,craftSlotItem.GetAmountItem());
+                craftSlotItem.ResetSlot();
+            }
+            
+            GetComponent<RectTransform>().anchoredPosition = orinalPostion;
             canvasGroup.blocksRaycasts = isDragging;
             isDragging = !isDragging;
         }
         
         if (Input.GetMouseButton(1))
         {
-            Debug.Log("tu es entrain de diviser");
             if (eventDataEnter.pointerEnter != null && 
                 eventDataEnter.pointerEnter.GetComponent<InventoryItem>() != null
                 && inventoryItem.GetItem() !=null && inventoryItem.GetAmountItem() != 1)
@@ -73,6 +103,24 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
                 {
                     slotDivisionCount.Add(slot);
                     Split(slot);
+                }
+            }
+            
+            if (eventDataEnter.pointerEnter != null && 
+                eventDataEnter.pointerEnter.GetComponent<CraftSlotItem>() != null
+                && craftSlotItem.GetItem() !=null && craftSlotItem.GetAmountItem() != 1)
+            {
+                CraftSlotItem slot = eventDataEnter.pointerEnter.GetComponent<CraftSlotItem>();
+
+                if (!slotCraftDivisionCount.Contains(craftSlotItem))
+                {
+                    slotCraftDivisionCount.Add(craftSlotItem);
+                }
+                
+                if (!slotCraftDivisionCount.Contains(slot))
+                {
+                    slotCraftDivisionCount.Add(slot);
+                    SplitCraft(slot);
                 }
             }
         }
@@ -103,19 +151,57 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
                 slotDivisionCount[i].AddItem(inventoryItem.GetImageItem().sprite, 1);
             }
         }
-
-        numFinal = 0;
     }
+    
+    void SplitCraft(CraftSlotItem _slot)
+    {
+        _slot.SetItem(craftSlotItem.GetItem());
 
+        int num = itemCount / (slotCraftDivisionCount.Count );
+        int numFinal= 0;
+
+        foreach (CraftSlotItem slotDivision in slotCraftDivisionCount)
+        {
+            slotDivision.SliptItem(craftSlotItem.GetImageItem().sprite, num);
+            Debug.LogWarning("Tu passes au suicant");
+            numFinal += num;
+        } 
+
+        Debug.LogWarning($"num : {num} / numFinal : {numFinal}");
+        
+        if (numFinal != itemCount)
+        {
+            int extra = itemCount - numFinal;
+            Debug.LogWarning($"extra {extra}");
+            for (int i = 0; i < extra; i++)
+            {
+                slotCraftDivisionCount[i].AddItem(craftSlotItem.GetItem(),craftSlotItem.GetImageItem().sprite, 1);
+            }
+        }
+    }
     public void OnPointerClick(PointerEventData eventData)
     {
-        itemCount = inventoryItem.GetAmountItem();
-        Debug.LogWarning(itemCount);
-        
-        orinalPostion = rectTransform.anchoredPosition;
-
         if(eventData.pointerClick.GetComponent<SlotDragAndDrop>() == null)
             return;
+        
+        
+        if (inventoryItem != null && inventoryItem.GetAmountItem() == 0 || 
+            craftSlotItem != null && craftSlotItem.GetAmountItem() == 0 )
+        {
+            return;
+        }
+        
+        if(eventData.pointerClick.GetComponent<InventoryItem>() != null )
+        {
+            itemCount = inventoryItem.GetAmountItem();
+        }
+
+        if (eventData.pointerClick.GetComponent<CraftSlotItem>() != null)
+        {
+            itemCount = craftSlotItem.GetAmountItem();
+        }
+        
+        orinalPostion = rectTransform.anchoredPosition;
 
         canvasGroup.blocksRaycasts = isDragging;
         isDragging = !isDragging;
@@ -126,17 +212,5 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
     public void OnPointerEnter(PointerEventData eventData)
     {
         eventDataEnter = eventData;
-    }
-    
-    public void SetOrinalPostion(Vector2 _newPostion)
-    {
-        orinalPostion = _newPostion;
-        rectTransform.anchoredPosition = orinalPostion;
-    }
-    
-    public Vector2 GetOrinalPostion()
-    {
-        orinalPostion = rectTransform.anchoredPosition;
-        return orinalPostion;
     }
 }
