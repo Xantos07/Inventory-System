@@ -29,5 +29,5 @@ MonoBehaviour:
     numberItem: 1
     positionCraft: 7
   craftingItemName: Axe
-  CraftingItemImage: {fileID: 21300000, guid: 019280304231e7e42b089b1965fda10f, type: 3}
+  CraftingItemImage: {fileID: 21300000, guid: 4b5d59e9971287b42b24c6f034f3ac49, type: 3}
   CraftingItemDescription: Cut a tree

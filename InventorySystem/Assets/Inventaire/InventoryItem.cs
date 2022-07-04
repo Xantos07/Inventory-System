@@ -35,7 +35,7 @@ public class InventoryItem : MonoBehaviour
         itemNumberTxt.text = amountItem.ToString();
     }
     
-    public void SliptItem(Sprite sprite, int _amount)
+    public void SplitItem(Sprite sprite, int _amount)
     {
         amountItem = _amount;
         itemImg.sprite = sprite;
@@ -86,11 +86,12 @@ public class InventoryItem : MonoBehaviour
         itemUI.SetItem(item);
     }
 
-    public void ResetSlot()
+    public void ResetSlot(Item _newItem)
     {
         amountItem = 0;
         itemImg.sprite = null;
         itemImg.color = new Color(0,0,0,0);
+        Destroy(_newItem);
         itemNumberTxt.text = "";
         item = null;
     }

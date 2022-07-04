@@ -26,18 +26,23 @@ public class Crafting : MonoBehaviour
                 for (int k = 0; k < craftSlotItem.Count; k++)
                 {
                     if (craftScriptable[i].ressource[j].positionCraft == craftSlotItem[k].GetItemPositionCraft() &&
-                        craftSlotItem[k].GetItem() == craftScriptable[i].ressource[j].item)
+                        craftSlotItem[k].GetItem() != null &&
+                        craftSlotItem[k].GetItem().GetType() == craftScriptable[i].ressource[j].item.GetType())
                     {
                         count++;
-                        Debug.Log(count);
                     }
                 }   
             }
 
             if (count == craftScriptable[i].ressource.Count)
             {
-                Debug.Log("vous pouvez craft un " + craftScriptable[i].CraftingItemImage.name);
+                Debug.LogWarning("vous pouvez craft un " + craftScriptable[i].CraftingItemImage.name);
                 craftingSlotItem.SetSlot(craftScriptable[i].CraftingItemImage, craftScriptable[i].CraftingItemDescription);
+                return;
+            }
+            else
+            {
+                craftingSlotItem.ResetSlot();
             }
         }
     }

@@ -29,5 +29,5 @@ MonoBehaviour:
     numberItem: 0
     positionCraft: 6
   craftingItemName: Pickaxe
-  CraftingItemImage: {fileID: 21300000, guid: b1f1ab065f63c6743b7db6fb6a1d86fb, type: 3}
+  CraftingItemImage: {fileID: 21300000, guid: 572414f348c2e504d81160b6b33b710a, type: 3}
   CraftingItemDescription: Mine a rock

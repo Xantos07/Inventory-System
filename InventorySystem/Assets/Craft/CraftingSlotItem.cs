@@ -22,4 +22,12 @@ public class CraftingSlotItem : MonoBehaviour
 
         descriptionTxt.text = _newDescription;
     }
+
+    public void ResetSlot()
+    {
+        itemImg.sprite = null;
+        itemImg.color = new Color(0,0,0,0);
+
+        descriptionTxt.text = "";
+    }
 }

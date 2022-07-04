@@ -257,7 +257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &12815698
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1104,7 +1106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &96924006
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1291,7 +1295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &101240156
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1796,7 +1802,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &128352777
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2218,7 +2226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &166138500
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3017,7 +3027,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &202127084
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3788,7 +3800,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &237954423
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4445,7 +4459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &295075504
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5277,7 +5293,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &325078140
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5931,8 +5949,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
-  img: {fileID: 307442984}
+  item: {fileID: 0}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 122653524}
   positionCraft: 7
   crafting: {fileID: 843070270}
@@ -6032,7 +6050,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &372162197
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6324,7 +6344,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &401744566
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7128,7 +7150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &432165072
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7314,7 +7338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountItem: 0
   item: {fileID: 0}
-  img: {fileID: 1654716841}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 379934064}
   positionCraft: 5
   crafting: {fileID: 843070270}
@@ -7414,7 +7438,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &441203506
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7670,7 +7696,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &449875583
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7857,7 +7885,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &455356991
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8194,7 +8224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &477682851
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8565,7 +8597,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &516756193
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9393,8 +9427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
-  img: {fileID: 648182463}
+  item: {fileID: 0}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 1736350574}
   positionCraft: 3
   crafting: {fileID: 843070270}
@@ -9494,7 +9528,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &557827253
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10199,7 +10235,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &592906153
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10683,7 +10721,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &647307316
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11555,7 +11595,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &683439620
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12253,7 +12295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &712203838
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13061,7 +13105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &741919341
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13248,7 +13294,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &744860080
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13435,7 +13483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &765738102
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13622,7 +13672,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &780869493
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13884,7 +13936,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &833772588
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14323,6 +14377,7 @@ MonoBehaviour:
   craftScriptable:
   - {fileID: 11400000, guid: 0ed6b7f08ae7ebb40a641e11dfe324a6, type: 2}
   - {fileID: 11400000, guid: 8897452dfd930a046a7c7366e0ef5983, type: 2}
+  - {fileID: 11400000, guid: c51c3feb4ec54be4cb17f6b1a91b624e, type: 2}
   craftingSlotItem: {fileID: 933686360}
   count: 0
 --- !u!224 &843070273
@@ -14404,7 +14459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &845077398
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -15670,7 +15727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &999124293
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16478,7 +16537,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1083947449
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16707,8 +16768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
-  img: {fileID: 386220585}
+  item: {fileID: 0}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 140153413}
   positionCraft: 6
   crafting: {fileID: 843070270}
@@ -16764,7 +16825,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1099204139
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16835,7 +16898,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1136048925
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17022,7 +17087,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1139333055
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17209,7 +17276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1146150074
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17471,7 +17540,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1169979905
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17964,7 +18035,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1221659942
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18628,7 +18701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1233552561
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18815,7 +18890,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1257700352
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19261,7 +19338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1292778227
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19716,7 +19795,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1315696146
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20140,7 +20221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1346060118
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20729,7 +20812,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1382102928
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20916,7 +21001,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1401047779
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22299,7 +22386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1469566512
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22657,7 +22746,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1483691908
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22844,7 +22935,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1484814577
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -23541,7 +23634,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1516097394
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24367,7 +24462,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1604349202
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24761,8 +24858,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}
-  img: {fileID: 267984585}
+  item: {fileID: 0}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 296220745}
   positionCraft: 1
   crafting: {fileID: 843070270}
@@ -24862,7 +24959,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1610913497
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24933,7 +25032,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1614389247
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25195,7 +25296,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1633472051
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25382,7 +25485,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1639106603
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26235,7 +26340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1693690422
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26973,7 +27080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountItem: 0
   item: {fileID: 0}
-  img: {fileID: 1643455356}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 313511967}
   positionCraft: 0
   crafting: {fileID: 843070270}
@@ -27073,7 +27180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1738651445
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28249,7 +28358,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1781934415
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28436,7 +28547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1791370938
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28621,8 +28734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountItem: 0
-  item: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}
-  img: {fileID: 1263939692}
+  item: {fileID: 0}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 1714809778}
   positionCraft: 4
   crafting: {fileID: 843070270}
@@ -28722,7 +28835,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1805541865
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28868,7 +28983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1810058414
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34639,7 +34756,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1919463667
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34901,7 +35020,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1922096986
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -35142,7 +35263,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1942300120
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -35328,7 +35451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountItem: 0
   item: {fileID: 0}
-  img: {fileID: 1460288409}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 1985719533}
   positionCraft: 8
   crafting: {fileID: 843070270}
@@ -35428,7 +35551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1962971116
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -35858,7 +35983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &1995111587
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36329,7 +36456,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &2031798162
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36650,7 +36779,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &2036805784
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37395,7 +37526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &2079471907
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37581,7 +37714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountItem: 0
   item: {fileID: 0}
-  img: {fileID: 1153892045}
+  itemImg: {fileID: 0}
   itemNumberTxt: {fileID: 414940789}
   positionCraft: 2
   crafting: {fileID: 843070270}
@@ -37681,7 +37814,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &2091063996
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37886,7 +38021,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &2095589047
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -38279,7 +38416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 565855697}
   orinalPostion: {x: 0, y: 0}
+  crafting: {fileID: 843070270}
   slotDivisionCount: []
+  slotCraftDivisionCount: []
 --- !u!225 &2145404812
 CanvasGroup:
   m_ObjectHideFlags: 0

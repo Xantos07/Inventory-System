@@ -15,7 +15,8 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
     
     private InventoryItem inventoryItem;
     private CraftSlotItem craftSlotItem;
-
+    [SerializeField] private Crafting crafting;
+    
     public List<InventoryItem> slotDivisionCount;
     public List<CraftSlotItem> slotCraftDivisionCount;
     
@@ -53,32 +54,38 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
                 eventDataClick.pointerClick.GetComponent<InventoryItem>() != null && 
                 inventoryItem !=null)
             {
+                //tu drag and drop dans l'inventaire
                 eventDataClick.pointerClick.GetComponent<InventoryItem>().AddItem(inventoryItem.GetImageItem().sprite,inventoryItem.GetAmountItem());
                 eventDataClick.pointerClick.GetComponent<InventoryItem>().SetItem(inventoryItem.GetItem());
-                inventoryItem.ResetSlot();
+                inventoryItem.ResetSlot(inventoryItem.GetItem());
                 
             } else if (eventDataClick.pointerClick != null &&
                        eventDataClick.pointerClick.GetComponent<SlotDragAndDrop>() != null &&
                        eventDataClick.pointerClick.GetComponent<InventoryItem>() != null &&
                        craftSlotItem != null)
             {
+                //tu drag and drop du craft dans l'inventaire
                 eventDataClick.pointerClick.GetComponent<InventoryItem>().AddItem(craftSlotItem.GetImageItem().sprite,craftSlotItem.GetAmountItem());
                 eventDataClick.pointerClick.GetComponent<InventoryItem>().SetItem(craftSlotItem.GetItem());
-                craftSlotItem.ResetSlot();
+                craftSlotItem.ResetSlot(craftSlotItem.GetItem());
             }
             else if (eventDataClick.pointerClick != null && inventoryItem !=null &&
                                     eventDataClick.pointerClick.GetComponent<CraftSlotItem>() != null)
             {
- 
+                //tu drag and drop de l'inventaire au craft
                 eventDataClick.pointerClick.GetComponent<CraftSlotItem>().AddItem(inventoryItem.GetItem(),inventoryItem.GetImageItem().sprite,inventoryItem.GetAmountItem());
-                inventoryItem.ResetSlot();
+                eventDataClick.pointerClick.GetComponent<CraftSlotItem>().SetItem(inventoryItem.GetItem());
+                inventoryItem.ResetSlot(inventoryItem.GetItem());
+                crafting.verification();
                 
             }else if (eventDataClick.pointerClick != null && craftSlotItem !=null &&
                                 eventDataClick.pointerClick.GetComponent<CraftSlotItem>() != null)
             {
- 
+                //tu drag and drop dans le  craft
                 eventDataClick.pointerClick.GetComponent<CraftSlotItem>().AddItem(craftSlotItem.GetItem(),craftSlotItem.GetImageItem().sprite,craftSlotItem.GetAmountItem());
-                craftSlotItem.ResetSlot();
+                eventDataClick.pointerClick.GetComponent<CraftSlotItem>().SetItem(craftSlotItem.GetItem());
+                craftSlotItem.ResetSlot(craftSlotItem.GetItem());
+                crafting.verification();
             }
             
             GetComponent<RectTransform>().anchoredPosition = orinalPostion;
@@ -135,7 +142,7 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
 
         foreach (InventoryItem slotDivision in slotDivisionCount)
         {
-            slotDivision.SliptItem(inventoryItem.GetImageItem().sprite, num);
+            slotDivision.SplitItem(inventoryItem.GetImageItem().sprite, num);
             Debug.LogWarning("Tu passes au suicant");
             numFinal += num;
         } 
@@ -162,7 +169,7 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
 
         foreach (CraftSlotItem slotDivision in slotCraftDivisionCount)
         {
-            slotDivision.SliptItem(craftSlotItem.GetImageItem().sprite, num);
+            slotDivision.SplitItem(craftSlotItem.GetImageItem().sprite, num);
             Debug.LogWarning("Tu passes au suicant");
             numFinal += num;
         } 
@@ -178,6 +185,8 @@ public class SlotDragAndDrop : MonoBehaviour,IPointerClickHandler, IPointerEnter
                 slotCraftDivisionCount[i].AddItem(craftSlotItem.GetItem(),craftSlotItem.GetImageItem().sprite, 1);
             }
         }
+        
+        crafting.verification();
     }
     public void OnPointerClick(PointerEventData eventData)
     {
