@@ -47,7 +47,7 @@ public class DetectionController : MonoBehaviour
 
                 if (!interaction.GetInteractionElement().Contains(identity.GetDetectionElement())) 
                 {
-                        Debug.Log("Mauvais item : " + identity.gameObject.name);
+                       // Debug.Log("Mauvais item : " + identity.gameObject.name);
                         continue;
                 }
 

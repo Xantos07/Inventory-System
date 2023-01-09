@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b51c98fdb1875f4eb4ea62a7eaf3a13, type: 3}
+  m_Name: Axe
+  m_EditorClassIdentifier: 
+  ressource:
+  - item: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}
+    numberItem: 1
+    positionCraft: 1
+  - item: {fileID: 7959453043007739093, guid: 679cd44a816e7c34c8749321ed8fb24d, type: 3}
+    numberItem: 1
+    positionCraft: 4
+  - item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
+    numberItem: 1
+    positionCraft: 3
+  - item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
+    numberItem: 1
+    positionCraft: 6
+  - item: {fileID: 2496884738668448085, guid: e9ee62500fe777643bdbfab57a5cab26, type: 3}
+    numberItem: 1
+    positionCraft: 7
+  CraftName: Axe
+  CraftImage: {fileID: 21300000, guid: 4b5d59e9971287b42b24c6f034f3ac49, type: 3}
+  CraftDescription: Cutting Tree
